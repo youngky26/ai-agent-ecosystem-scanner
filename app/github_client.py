@@ -1,4 +1,5 @@
 import asyncio
+import base64
 import time
 
 import httpx
@@ -70,5 +71,4 @@ class GitHubClient:
             if response.status_code != 200:
                 return ""
             data = response.json()
-            import base64
             return base64.b64decode(data.get("content", "")).decode("utf-8", "replace")
