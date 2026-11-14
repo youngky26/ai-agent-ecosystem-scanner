@@ -8,9 +8,9 @@ A self-hosted MVP for discovering and ranking public GitHub projects in the AI-a
 - More precise keyword-based categorization (still heuristic).
 - Explainable relevance score with a component breakdown.
 - Basic secret-pattern checks against README text, with evidence redacted.
-- FastAPI dashboard and JSON API for scans started from the running web app.
-- GitHub Actions scan on each push to `main`, daily at 02:17 UTC, or manually.
-- Scan results exported as a downloadable GitHub Actions artifact (`scan-results.json`).
+- FastAPI dashboard and JSON API.
+- Persistent scan history using SQLite by default; PostgreSQL is supported through `DATABASE_URL`.
+- Daily GitHub Actions scan and downloadable JSON artifact.
 
 ## Scoring model
 
@@ -33,25 +33,28 @@ cp .env.example .env
 # Set GITHUB_TOKEN in .env
 docker compose up --build
 ```
-Open http://localhost:8000.
+Open http://localhost:8000. Docker Compose mounts a persistent volume at `/app/data` for the SQLite database.
 
 ## Environment
 - `GITHUB_TOKEN`: GitHub token with public repository read access (recommended).
 - `SCAN_LIMIT`: maximum repositories to discover (default 30).
-- `DATABASE_URL` and `OPENAI_API_KEY`: reserved for future extensions; they are not currently used by the scanner.
-
-## GitHub Actions
-The scanner runs automatically on pushes to `main`, daily, and through manual workflow dispatch. It uses the workflow's built-in GitHub token. After a successful run, download the `ai-agent-ecosystem-scan-results` artifact from the run.
+- `DATABASE_URL`: SQLAlchemy database URL. Defaults to SQLite; PostgreSQL is supported.
+- `OPENAI_API_KEY`: reserved for future extensions; not currently used.
 
 ## API
 - `GET /` dashboard
 - `GET /health` health check
-- `GET /api/repos` scanned repositories held in the running app's memory
-- `GET /api/recommendations` ranked recommendations
-- `POST /api/scan` trigger a scan (protect this endpoint before exposing publicly)
+- `GET /api/repos` repositories from the latest stored scan
+- `GET /api/recommendations` ranked recommendations from the latest scan
+- `GET /api/scans` recent scan history
+- `GET /api/scans/{scan_id}` one scan and its repositories
+- `POST /api/scan` trigger and persist a scan (protect this endpoint before exposing publicly)
+
+## Scheduled scans and shared history
+GitHub Actions runs daily at 02:17 UTC or manually. Each run uploads `scan-results.json` as an artifact for 30 days. The runner's local SQLite file is temporary. To make scheduled results appear in the same database as a deployed web app, configure the same PostgreSQL `DATABASE_URL` as a GitHub Actions repository secret named `DATABASE_URL` and as the web app environment variable. Without that shared database configuration, scheduled scan artifacts and the web app's database remain separate.
 
 ## Tests
-Run `pytest -q`. CI runs unit tests and Python compilation on pushes and pull requests.
+Run `PYTHONPATH=. pytest -q`. CI runs tests and Python compilation on pushes and pull requests.
 
 ## Current limitations
-This is an early MVP. The web app currently keeps scan results in memory, so results are lost when the process restarts. GitHub Actions results are downloadable artifacts for 30 days; they are not synchronized into the web dashboard or a persistent database. Categorization, scoring, and secret checks remain heuristic. Secret checks inspect README text only and are not a substitute for repository-wide secret scanning. OpenAI summaries and dependency vulnerability scanning are not implemented yet.
+Categorization, scoring, and secret checks remain heuristic. Secret checks inspect README text only and are not a substitute for repository-wide secret scanning. Search results depend on GitHub Search API limits and query ranking. OpenAI summaries and dependency vulnerability scanning are not implemented yet.
