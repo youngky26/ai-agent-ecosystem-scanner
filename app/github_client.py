@@ -1,3 +1,6 @@
+import asyncio
+import time
+
 import httpx
 from .config import settings
 
@@ -12,30 +15,48 @@ QUERIES = [
     '"agent workflow" orchestration',
 ]
 
+
 class GitHubClient:
     def __init__(self):
         self.headers = {"Accept": "application/vnd.github+json"}
         if settings.github_token:
             self.headers["Authorization"] = f"Bearer {settings.github_token}"
 
+    async def _search_query(self, client: httpx.AsyncClient, query: str, per_page: int):
+        response = await client.get(
+            f"{BASE}/search/repositories",
+            params={"q": query + " is:public", "sort": "updated", "per_page": per_page},
+            headers=self.headers,
+        )
+        if response.status_code == 403 and response.headers.get("X-RateLimit-Remaining") == "0":
+            reset = int(response.headers.get("X-RateLimit-Reset", "0") or 0)
+            wait_seconds = max(1, reset - int(time.time()) + 1)
+            if wait_seconds <= 90:
+                await asyncio.sleep(wait_seconds)
+                response = await client.get(
+                    f"{BASE}/search/repositories",
+                    params={"q": query + " is:public", "sort": "updated", "per_page": per_page},
+                    headers=self.headers,
+                )
+            else:
+                raise RuntimeError(
+                    f"GitHub Search API rate limit exhausted; retry after {wait_seconds} seconds."
+                )
+        if response.status_code == 403:
+            raise RuntimeError(
+                "GitHub Search API returned 403. Check token permissions and API rate limits: "
+                + response.text[:300]
+            )
+        response.raise_for_status()
+        return response.json().get("items", [])
+
     async def search(self, limit: int = 30) -> list[dict]:
         results = {}
-        # Reserve room for every query so the first broad MCP search cannot
-        # consume the entire scan limit before other ecosystem areas are checked.
         per_query = max(3, min(10, (limit + len(QUERIES) - 1) // len(QUERIES)))
         async with httpx.AsyncClient(timeout=30) as client:
             for query in QUERIES:
-                response = await client.get(
-                    f"{BASE}/search/repositories",
-                    params={
-                        "q": query + " is:public",
-                        "sort": "updated",
-                        "per_page": per_query,
-                    },
-                    headers=self.headers,
-                )
-                response.raise_for_status()
-                for item in response.json().get("items", []):
+                items = await self._search_query(client, query, per_query)
+                for item in items:
                     results[item["full_name"]] = item
                 if len(results) >= limit:
                     break
