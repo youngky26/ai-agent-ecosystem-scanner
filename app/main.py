@@ -1,6 +1,7 @@
+import secrets
 from pathlib import Path
 
-from fastapi import FastAPI, HTTPException, Query
+from fastapi import FastAPI, Header, HTTPException, Query
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 
@@ -9,7 +10,7 @@ from .github_client import GitHubClient
 from .analyzer import analyze
 from .storage import get_scan, latest_repositories, list_scans, save_scan
 
-app = FastAPI(title="AI Agent Ecosystem Scanner", version="0.2.0")
+app = FastAPI(title="AI Agent Ecosystem Scanner", version="0.3.0")
 STATIC = Path(__file__).parent / "static"
 app.mount("/static", StaticFiles(directory=STATIC), name="static")
 
@@ -25,7 +26,11 @@ async def health():
 
 
 @app.post("/api/scan")
-async def scan():
+async def scan(x_scan_key: str = Header(default="", alias="X-Scan-Key")):
+    if not settings.scan_api_key:
+        raise HTTPException(503, "Admin scanning is disabled until SCAN_API_KEY is configured.")
+    if not secrets.compare_digest(x_scan_key, settings.scan_api_key):
+        raise HTTPException(401, "A valid admin scan key is required.")
     if not settings.github_token:
         raise HTTPException(400, "Set GITHUB_TOKEN before scanning.")
     client = GitHubClient()
