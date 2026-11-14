@@ -1,34 +1,58 @@
-name: Daily ecosystem scan
+name: Daily ecosystem scan and GitHub Pages deploy
 on:
   schedule:
     - cron: "17 2 * * *"
   workflow_dispatch:
 
 concurrency:
-  group: daily-ecosystem-scan
+  group: ecosystem-pages
   cancel-in-progress: false
 
 permissions:
-  contents: read
+  contents: write
+  pages: write
+  id-token: write
 
 jobs:
-  scan:
+  scan-and-deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install -r requirements.txt
-      - name: Run scanner
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run ecosystem scan
         env:
           GITHUB_TOKEN: ${{ github.token }}
-          DATABASE_URL: ${{ secrets.DATABASE_URL || 'sqlite:///./scanner.db' }}
+          DATABASE_URL: sqlite:///./scanner.db
         run: python -m app.scan
-      - name: Upload scan results
-        uses: actions/upload-artifact@v4
+      - name: Prepare static dashboard data
+        run: python .github/scripts/publish_results.py
+      - name: Commit latest public scan data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/data/latest.json site/data/history.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish ecosystem scan results"
+            git push origin HEAD:main
+          fi
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          name: ai-agent-ecosystem-scan-results
-          path: scan-results.json
-          if-no-files-found: error
-          retention-days: 30
+          path: site
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
