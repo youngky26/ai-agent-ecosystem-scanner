@@ -7,11 +7,10 @@ function renderRepositories(rows) {
   container.replaceChildren();
   if (!rows.length) {
     const empty = document.createElement("p");
-    empty.textContent = "No repositories found. Run a scan to discover projects.";
+    empty.textContent = "No repositories found. Wait for the scheduled scan or ask an admin to run one.";
     container.append(empty);
     return;
   }
-
   for (const repo of rows) {
     const card = document.createElement("article");
     const meta = document.createElement("div");
@@ -36,13 +35,10 @@ function renderRepositories(rows) {
     description.textContent = repo.description || "No description provided.";
     const details = document.createElement("small");
     details.textContent = "★ " + (repo.stars || 0) + " · " +
-      (repo.language || "Unknown language") + " · Updated " +
-      (repo.updated_at || "").slice(0, 10);
-
+      (repo.language || "Unknown language") + " · Updated " + (repo.updated_at || "").slice(0, 10);
     const breakdown = document.createElement("small");
     breakdown.textContent = "Score details: " +
       Object.entries(repo.score_breakdown || {}).map(([key, value]) => key + " " + value).join(" · ");
-
     card.append(meta, title, description, details, document.createElement("br"), breakdown);
     container.append(card);
   }
@@ -86,10 +82,15 @@ async function refreshDashboard() {
 }
 
 button.addEventListener("click", async () => {
+  const key = window.prompt("Admin scan key (not stored by this page):");
+  if (!key) return;
   button.disabled = true;
   status.textContent = "Scanning public GitHub repositories…";
   try {
-    const response = await fetch("/api/scan", { method: "POST" });
+    const response = await fetch("/api/scan", {
+      method: "POST",
+      headers: { "X-Scan-Key": key }
+    });
     const data = await response.json();
     if (!response.ok) throw new Error(data.detail || "Scan failed");
     status.textContent = "Saved scan #" + data.scan_id + " · " + data.scanned + " repositories";
