@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: ai-agent-ecosystem-scanner
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12"
+      - key: DATABASE_URL
+        sync: false
+      - key: GITHUB_TOKEN
+        sync: false
+      - key: SCAN_API_KEY
+        generateValue: true
+      - key: SCAN_LIMIT
+        value: "30"
