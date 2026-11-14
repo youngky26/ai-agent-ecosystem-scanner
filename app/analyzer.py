@@ -44,7 +44,7 @@ def _score(repo: dict, categories: list[str]) -> tuple[int, dict]:
     metadata = (5 if repo.get("description") else 0) + (5 if repo.get("topics") else 0) + (5 if repo.get("license") else 0)
     readme_length = len(str(repo.get("readme") or "").strip())
     documentation = 0 if readme_length == 0 else 5 if readme_length < 500 else 10 if readme_length < 2000 else 15
-    relevance = min(20, len(categories) * 7)
+    relevance = min(20, len(categories) * 7) if categories != ["other"] else 0
     breakdown = {
         "popularity": popularity,
         "community": community,
