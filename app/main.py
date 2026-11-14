@@ -1,23 +1,28 @@
-from fastapi import FastAPI, HTTPException
+from pathlib import Path
+
+from fastapi import FastAPI, HTTPException, Query
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
-from pathlib import Path
+
 from .config import settings
 from .github_client import GitHubClient
 from .analyzer import analyze
+from .storage import get_scan, latest_repositories, list_scans, save_scan
 
-app = FastAPI(title="AI Agent Ecosystem Scanner", version="0.1.0")
+app = FastAPI(title="AI Agent Ecosystem Scanner", version="0.2.0")
 STATIC = Path(__file__).parent / "static"
 app.mount("/static", StaticFiles(directory=STATIC), name="static")
-SCANNED: dict[str, dict] = {}
+
 
 @app.get("/", response_class=HTMLResponse)
 async def home():
     return (Path(__file__).parent / "templates" / "index.html").read_text()
 
+
 @app.get("/health")
 async def health():
-    return {"status": "ok", "repositories": len(SCANNED)}
+    return {"status": "ok", "repositories": len(latest_repositories())}
+
 
 @app.post("/api/scan")
 async def scan():
@@ -26,10 +31,11 @@ async def scan():
     client = GitHubClient()
     try:
         items = await client.search(settings.scan_limit)
+        results = []
         for item in items:
             readme = await client.readme(item["full_name"])
             repo = {
-                "full_name": item["full_name"], "name": item["name"],
+                "full_name": item["full_name"], "name": item.get("name", ""),
                 "description": item.get("description") or "", "stars": item.get("stargazers_count", 0),
                 "forks": item.get("forks_count", 0), "language": item.get("language"),
                 "license": (item.get("license") or {}).get("spdx_id"),
@@ -37,15 +43,32 @@ async def scan():
                 "html_url": item.get("html_url"), "readme": readme,
             }
             repo.update(analyze(repo))
-            SCANNED[repo["full_name"]] = repo
-        return {"scanned": len(items), "total": len(SCANNED)}
+            repo.pop("readme", None)
+            results.append(repo)
+        run_id = save_scan(results)
+        return {"scan_id": run_id, "scanned": len(results)}
     except Exception as exc:
         raise HTTPException(502, f"GitHub scan failed: {exc}") from exc
 
+
 @app.get("/api/repos")
 async def repos():
-    return sorted(SCANNED.values(), key=lambda r: r["score"], reverse=True)
+    return latest_repositories()
+
 
 @app.get("/api/recommendations")
 async def recommendations():
-    return [r for r in sorted(SCANNED.values(), key=lambda r: r["score"], reverse=True) if r["score"] >= 20][:10]
+    return [r for r in latest_repositories() if r.get("score", 0) >= 20][:10]
+
+
+@app.get("/api/scans")
+async def scans(limit: int = Query(default=20, ge=1, le=100)):
+    return list_scans(limit)
+
+
+@app.get("/api/scans/{scan_id}")
+async def scan_detail(scan_id: int):
+    result = get_scan(scan_id)
+    if result is None:
+        raise HTTPException(404, "Scan not found")
+    return result
