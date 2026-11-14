@@ -1,9 +1,8 @@
 import os
 from datetime import datetime, timezone
 
-from sqlalchemy import DateTime, Integer, JSON, select
+from sqlalchemy import DateTime, Integer, JSON, create_engine, select
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column, sessionmaker
-from sqlalchemy import create_engine
 
 from .config import settings
 
@@ -22,6 +21,11 @@ class ScanRun(Base):
 
 
 def build_engine(database_url: str):
+    if database_url.startswith("postgres://"):
+        database_url = database_url.replace("postgres://", "postgresql+psycopg://", 1)
+    elif database_url.startswith("postgresql://"):
+        database_url = database_url.replace("postgresql://", "postgresql+psycopg://", 1)
+
     if database_url.startswith("sqlite:///"):
         path = database_url.removeprefix("sqlite:///")
         if path != ":memory:" and path.startswith("/"):
