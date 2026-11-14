@@ -1,0 +1,12 @@
+services:
+  scanner:
+    build: .
+    ports:
+      - "8000:8000"
+    env_file: .env
+    volumes:
+      - scanner_data:/app/data
+    environment:
+      DATABASE_URL: sqlite:////app/data/scanner.db
+volumes:
+  scanner_data:
