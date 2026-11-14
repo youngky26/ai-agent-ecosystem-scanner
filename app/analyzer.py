@@ -10,6 +10,14 @@ SECRET_PATTERNS = [
     ("AWS access key", re.compile(r"AKIA[0-9A-Z]{16}")),
 ]
 
+PLACEHOLDER_HINTS = ("xxxx", "your", "example", "sample", "placeholder", "1234", "****")
+
+
+def _is_placeholder(value: str) -> bool:
+    lowered = value.lower()
+    body = lowered.split("-", 1)[-1].split("_", 1)[-1]
+    return any(h in lowered for h in PLACEHOLDER_HINTS) or len(set(body)) <= 3
+
 
 def _freshness_score(updated_at: str | None) -> int:
     if not updated_at:
@@ -69,10 +77,10 @@ def analyze(repo: dict) -> dict:
     for label, pattern in SECRET_PATTERNS:
         for match in pattern.finditer(readme):
             value = match.group(0)
-            findings.append({
-                "type": label,
-                "evidence": value[:4] + "…" + value[-4:],
-            })
+            if _is_placeholder(value):
+                continue
+            # Publish only the key prefix, never any tail of a real credential.
+            findings.append({"type": label, "evidence": value[:4] + "…"})
 
     return {
         "categories": categories,
