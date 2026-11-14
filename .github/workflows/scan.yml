@@ -23,7 +23,7 @@ jobs:
       - name: Run scanner
         env:
           GITHUB_TOKEN: ${{ github.token }}
-          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          DATABASE_URL: ${{ secrets.DATABASE_URL || 'sqlite:///./scanner.db' }}
         run: python -m app.scan
       - name: Upload scan results
         uses: actions/upload-artifact@v4
