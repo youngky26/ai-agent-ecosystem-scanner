@@ -1,10 +1,12 @@
 name: Daily ecosystem scan
 on:
-  push:
-    branches: [main]
   schedule:
     - cron: "17 2 * * *"
   workflow_dispatch:
+
+concurrency:
+  group: daily-ecosystem-scan
+  cancel-in-progress: false
 
 permissions:
   contents: read
@@ -21,6 +23,7 @@ jobs:
       - name: Run scanner
         env:
           GITHUB_TOKEN: ${{ github.token }}
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
         run: python -m app.scan
       - name: Upload scan results
         uses: actions/upload-artifact@v4
