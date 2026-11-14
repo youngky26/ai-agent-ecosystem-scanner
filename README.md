@@ -1,16 +1,15 @@
 # AI Agent Ecosystem Scanner
 
-A self-hosted intelligence scanner for public GitHub projects in the AI-agent ecosystem: MCP servers, agent frameworks, skills, plugins, tools, memory, RAG, and integrations.
+A self-hosted MVP for discovering and ranking public GitHub projects in the AI-agent ecosystem: MCP servers, agent frameworks, skills, plugins, tools, memory, RAG, and integrations.
 
-## Features
+## Implemented features
 - GitHub repository discovery using targeted search queries.
-- Repository metadata, README, topics, language, license and activity collection.
-- Heuristic categorization and relevance/quality scoring.
-- Optional OpenAI summaries (deterministic fallback when no API key is configured).
-- Basic secret-pattern detection with redacted evidence.
-- FastAPI dashboard and JSON API.
-- SQLite for local use; PostgreSQL supported for persistent deployments.
-- Daily GitHub Actions scan and manual workflow dispatch.
+- Repository metadata and README collection.
+- Heuristic categorization and relevance scoring.
+- Basic secret-pattern checks against README text, with evidence redacted.
+- FastAPI dashboard and JSON API for scans started from the running web app.
+- GitHub Actions scan on each push to `main`, daily at 02:17 UTC, or manually.
+- Scan results exported as a downloadable GitHub Actions artifact (`scan-results.json`).
 
 ## Run locally
 ```bash
@@ -22,19 +21,18 @@ Open http://localhost:8000.
 
 ## Environment
 - `GITHUB_TOKEN`: GitHub token with public repository read access (recommended).
-- `DATABASE_URL`: defaults to SQLite; use PostgreSQL for hosted deployments.
-- `OPENAI_API_KEY`: optional summaries.
-- `OPENAI_MODEL`: optional model override.
+- `SCAN_LIMIT`: maximum repositories to discover (default 30).
+- `DATABASE_URL` and `OPENAI_API_KEY`: reserved for future extensions; they are not currently used by the scanner.
 
 ## GitHub Actions
-Add repository secrets `GITHUB_TOKEN` (or use the built-in token where permitted), `DATABASE_URL` and optionally `OPENAI_API_KEY`. The hosted runner filesystem is ephemeral; use PostgreSQL for data that must persist between scheduled runs.
+The scanner runs automatically on pushes to `main`, daily, and through manual workflow dispatch. It uses the workflow's built-in GitHub token. After a successful run, open **Actions**, select **Daily ecosystem scan**, open the latest run, and download the `ai-agent-ecosystem-scan-results` artifact.
 
 ## API
 - `GET /` dashboard
 - `GET /health` health check
-- `GET /api/repos` scanned repositories
+- `GET /api/repos` scanned repositories held in the running app's memory
 - `GET /api/recommendations` ranked recommendations
 - `POST /api/scan` trigger a scan (protect this endpoint before exposing publicly)
 
-## Scope
-This is an extensible MVP. Security checks are heuristic and are not a substitute for dedicated SAST, dependency, or secret-scanning products. Dependency advisory checks should be treated as best-effort.
+## Current limitations
+This is an early MVP. The web app currently keeps scan results in memory, so results are lost when the process restarts. GitHub Actions results are available as a downloadable artifact for 30 days; they are not yet synchronized into the web dashboard or a persistent database. Categorization, scoring, and secret checks are heuristic, not a substitute for dedicated security scanning. OpenAI summaries and dependency vulnerability scanning are not implemented yet.
