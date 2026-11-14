@@ -1,0 +1,13 @@
+.git
+.github
+.env
+.env.*
+!.env.example
+*.db
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+tests/
+site/
+scan-results.json

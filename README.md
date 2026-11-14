@@ -38,12 +38,13 @@ The scheduled scan runs daily. GitHub Actions uses its built-in `GITHUB_TOKEN`; 
 ## Run locally
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements-dev.txt   # runtime + pytest
 # Set GITHUB_TOKEN in your environment if you want to scan locally
 python -m app.scan
+PYTHONPATH=. pytest -q
 ```
 
-The FastAPI app and local SQLite storage remain available for local development, but the public GitHub Pages dashboard is static and read-only. Scan data is published from `scan-results.json` into `site/data/`.
+The FastAPI app and local SQLite storage remain available for local development, but the public GitHub Pages dashboard is static and read-only. Scan data is published from `scan-results.json` into `site/data/` by `python -m app.publish`, which keeps its own run counter (the CI database is recreated each run) so scan history accumulates.
 
 ## Scoring model
 
