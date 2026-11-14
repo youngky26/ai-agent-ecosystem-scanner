@@ -59,7 +59,10 @@ def save_scan(repositories: list[dict], scanned_at: datetime | None = None, db_e
 
 
 def latest_repositories(db_engine=None) -> list[dict]:
-    factory = sessionmaker(bind=db_engine or engine)
+    target_engine = db_engine or engine
+    if db_engine is not None:
+        Base.metadata.create_all(target_engine)
+    factory = sessionmaker(bind=target_engine)
     with factory() as session:
         run = session.scalar(
             select(ScanRun).order_by(ScanRun.scanned_at.desc(), ScanRun.id.desc()).limit(1)
@@ -68,7 +71,10 @@ def latest_repositories(db_engine=None) -> list[dict]:
 
 
 def list_scans(limit: int = 20, db_engine=None) -> list[dict]:
-    factory = sessionmaker(bind=db_engine or engine)
+    target_engine = db_engine or engine
+    if db_engine is not None:
+        Base.metadata.create_all(target_engine)
+    factory = sessionmaker(bind=target_engine)
     with factory() as session:
         runs = session.scalars(
             select(ScanRun).order_by(ScanRun.scanned_at.desc(), ScanRun.id.desc()).limit(limit)
@@ -80,7 +86,10 @@ def list_scans(limit: int = 20, db_engine=None) -> list[dict]:
 
 
 def get_scan(scan_id: int, db_engine=None) -> dict | None:
-    factory = sessionmaker(bind=db_engine or engine)
+    target_engine = db_engine or engine
+    if db_engine is not None:
+        Base.metadata.create_all(target_engine)
+    factory = sessionmaker(bind=target_engine)
     with factory() as session:
         run = session.get(ScanRun, scan_id)
         if not run:
