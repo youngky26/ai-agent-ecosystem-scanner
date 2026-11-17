@@ -1,14 +1,107 @@
 {
-  "scan_id": 3,
-  "scanned_at": "2026-11-16T09:53:08.895881+00:00",
+  "scan_id": 4,
+  "scanned_at": "2026-11-17T10:49:33.910819+00:00",
   "count": 30,
   "repositories": [
+    {
+      "full_name": "deepset-ai/haystack",
+      "name": "haystack",
+      "description": "Open-source AI orchestration framework for building context-engineered, production-ready LLM applications. Design modular pipelines and agent workflows with explicit control over retrieval, routing, memory, and generation. Built for scalable agents, RAG, multimodal applications, semantic search, and conversational systems.",
+      "stars": 27025,
+      "forks": 3478,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "topics": [
+        "agent-framework",
+        "agentic-ai",
+        "agentic-rag",
+        "agents",
+        "ai",
+        "ai-agents",
+        "context-engineering",
+        "framework",
+        "genai",
+        "generative-ai",
+        "information-retrieval",
+        "large-language-models",
+        "llm",
+        "mcp",
+        "multi-agent",
+        "orchestration",
+        "python",
+        "rag",
+        "retrieval-augmented-generation",
+        "semantic-search"
+      ],
+      "updated_at": "2026-11-17T09:35:16Z",
+      "html_url": "https://github.com/deepset-ai/haystack",
+      "categories": [
+        "mcp",
+        "memory-rag",
+        "tools",
+        "workflows"
+      ],
+      "score": 91,
+      "score_breakdown": {
+        "popularity": 18,
+        "community": 3,
+        "freshness": 20,
+        "metadata": 15,
+        "documentation": 15,
+        "ecosystem_relevance": 20
+      },
+      "secret_findings": []
+    },
+    {
+      "full_name": "omnigent-ai/omnigent",
+      "name": "omnigent",
+      "description": "Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policies and sandboxing, and collaborate in real time from any device.",
+      "stars": 11398,
+      "forks": 1908,
+      "language": "Python",
+      "license": "Apache-2.0",
+      "topics": [
+        "agent-framework",
+        "agent-governance",
+        "agent-orchestration",
+        "agents",
+        "ai",
+        "ai-agent",
+        "ai-agents",
+        "claude-code",
+        "codex",
+        "coding-agents",
+        "developer-tools",
+        "llm",
+        "ml",
+        "multi-agent",
+        "python",
+        "sandbox"
+      ],
+      "updated_at": "2026-11-17T10:36:43Z",
+      "html_url": "https://github.com/omnigent-ai/omnigent",
+      "categories": [
+        "mcp",
+        "frameworks",
+        "workflows"
+      ],
+      "score": 89,
+      "score_breakdown": {
+        "popularity": 16,
+        "community": 3,
+        "freshness": 20,
+        "metadata": 15,
+        "documentation": 15,
+        "ecosystem_relevance": 20
+      },
+      "secret_findings": []
+    },
     {
       "full_name": "MervinPraison/PraisonAI",
       "name": "PraisonAI",
       "description": "Private AI agents for highly regulated teams, and for anyone who wants AI on their own computer. Open-source Python agent framework that runs fully offline.",
-      "stars": 9338,
-      "forks": 1508,
+      "stars": 9343,
+      "forks": 1510,
       "language": "Python",
       "license": "MIT",
       "topics": [
@@ -32,7 +125,7 @@
         "regulated-industries",
         "self-hosted"
       ],
-      "updated_at": "2026-11-16T05:24:30Z",
+      "updated_at": "2026-11-17T10:24:04Z",
       "html_url": "https://github.com/MervinPraison/PraisonAI",
       "categories": [
         "mcp",
@@ -53,37 +146,47 @@
       "secret_findings": []
     },
     {
-      "full_name": "ai-pivot/xbot",
-      "name": "xbot",
-      "description": "Extensible AI agent framework in Go — multi-channel (Feishu/Slack/CLI), sandboxed tool execution, MCP integration, multi-tenant sessions",
-      "stars": 15,
-      "forks": 7,
-      "language": "Go",
-      "license": "MIT",
+      "full_name": "dataelement/bisheng",
+      "name": "bisheng",
+      "description": "BISHENG is an open-source enterprise Agent platform for building, deploying, and managing AI applications. It combines AI agents, workflows, RAG and knowledge management, desktop agent integration, and vibecoding app hosting with unified model management, evaluation, observability, access control, and enterprise administration.",
+      "stars": 12348,
+      "forks": 2050,
+      "language": "Python",
+      "license": "Apache-2.0",
       "topics": [
-        "ai-agent",
-        "feishu",
-        "golang",
+        "agent",
+        "ai",
+        "chatbot",
+        "dsh",
+        "dsh-plugin",
+        "enterprise",
+        "finetune",
+        "genai",
+        "gpt",
+        "langchian",
         "llm",
-        "mcp",
-        "multi-tenant",
-        "qq",
-        "sandbox",
-        "tool-use",
-        "tui",
-        "web"
+        "llmdevops",
+        "llmops",
+        "ocr",
+        "openai",
+        "orchestration",
+        "python",
+        "rag",
+        "workflow"
       ],
-      "updated_at": "2026-11-10T14:40:55Z",
-      "html_url": "https://github.com/ai-pivot/xbot",
+      "updated_at": "2026-11-17T09:49:41Z",
+      "html_url": "https://github.com/dataelement/bisheng",
       "categories": [
         "mcp",
         "plugins",
-        "frameworks"
+        "frameworks",
+        "memory-rag",
+        "workflows"
       ],
-      "score": 84,
+      "score": 89,
       "score_breakdown": {
-        "popularity": 5,
-        "community": 9,
+        "popularity": 16,
+        "community": 3,
         "freshness": 20,
         "metadata": 15,
         "documentation": 15,
@@ -92,86 +195,47 @@
       "secret_findings": []
     },
     {
-      "full_name": "cogitator-ai/Cogitator-AI",
-      "name": "Cogitator-AI",
-      "description": "AI agents that survive production. Self-hosted TypeScript runtime: multi-provider LLMs, tools with approvals, memory & RAG, durable workflows, multi-agent swarms, sandboxed execution, MCP and A2A.",
-      "stars": 43,
-      "forks": 15,
-      "language": "TypeScript",
+      "full_name": "axisvela/praxo-core",
+      "name": "praxo-core",
+      "description": "Multi-language, embeddable agent framework with policy controls, HITL approval, checkpoints, events, and tool calling. Go reference plus Python, TypeScript, Java, Rust, C#, R, Ruby, PHP, Elixir, Lua, and more.",
+      "stars": 13,
+      "forks": 11,
+      "language": "Python",
       "license": "MIT",
       "topics": [
-        "a2a",
-        "agent",
-        "agentic-ai",
-        "agentic-framework",
-        "agentic-workflow",
-        "ai",
+        "agent-framework",
+        "agent-loop",
         "ai-agents",
-        "ai-framework",
-        "anthropic",
-        "gemini",
+        "csharp",
+        "java",
         "llm",
+        "llm-agents",
         "mcp",
+        "mit-license",
         "multi-agent",
-        "ollama",
-        "openai",
-        "orchestration",
-        "rag",
-        "typescript",
-        "wasm",
-        "workflow"
+        "multi-language",
+        "openai-compatible",
+        "php",
+        "policy",
+        "python",
+        "ruby",
+        "rust",
+        "sandbox",
+        "tool-calling",
+        "typescript"
       ],
-      "updated_at": "2026-11-11T23:14:20Z",
-      "html_url": "https://github.com/cogitator-ai/Cogitator-AI",
+      "updated_at": "2026-11-13T16:54:43Z",
+      "html_url": "https://github.com/axisvela/praxo-core",
       "categories": [
         "mcp",
-        "skills",
-        "plugins",
         "frameworks",
         "memory-rag",
         "tools",
         "workflows"
       ],
-      "score": 84,
+      "score": 85,
       "score_breakdown": {
-        "popularity": 7,
-        "community": 7,
-        "freshness": 20,
-        "metadata": 15,
-        "documentation": 15,
-        "ecosystem_relevance": 20
-      },
-      "secret_findings": []
-    },
-    {
-      "full_name": "Shards-foundation/Shards-kernel",
-      "name": "Shards-kernel",
-      "description": "Fail-closed AI agent tool authorization with signed permits, replay protection and verifiable audit evidence. Python SDK and local MCP relay.",
-      "stars": 5,
-      "forks": 5,
-      "language": "Python",
-      "license": "MIT",
-      "topics": [
-        "agent-governance",
-        "ai-agent",
-        "audit-log",
-        "mcp",
-        "policy-engine",
-        "python",
-        "signed-permits",
-        "tool-authorization"
-      ],
-      "updated_at": "2026-11-13T01:00:06Z",
-      "html_url": "https://github.com/Shards-foundation/Shards-kernel",
-      "categories": [
-        "mcp",
-        "frameworks",
-        "tools",
-        "workflows"
-      ],
-      "score": 83,
-      "score_breakdown": {
-        "popularity": 3,
+        "popularity": 5,
         "community": 10,
         "freshness": 20,
         "metadata": 15,
@@ -181,260 +245,181 @@
       "secret_findings": []
     },
     {
-      "full_name": "llamatik/Llamatik",
-      "name": "Llamatik",
-      "description": "True on-device AI SDK for Kotlin Multiplatform (Android, iOS, Desktop, JVM, WASM). LLM inference, Speech-to-Text, Image Generation, Agent Framework and RAG — powered by llama.cpp, whisper.cpp and stable-diffusion.cpp.",
-      "stars": 220,
-      "forks": 38,
-      "language": "Kotlin",
-      "license": "NOASSERTION",
-      "topics": [
-        "ai",
-        "android",
-        "desktop",
-        "edge-ai",
-        "ggml",
-        "inference",
-        "ios",
-        "kmp",
-        "kmp-library",
-        "kotlin",
-        "ktor",
-        "llama",
-        "llama-cpp",
-        "llm",
-        "mobile-ai",
-        "multiplatform",
-        "offline-ai",
-        "on-device-ai",
-        "privacy",
-        "rag"
-      ],
-      "updated_at": "2026-11-13T23:55:29Z",
-      "html_url": "https://github.com/llamatik/Llamatik",
-      "categories": [
-        "mcp",
-        "plugins",
-        "frameworks",
-        "memory-rag",
-        "workflows"
-      ],
-      "score": 82,
-      "score_breakdown": {
-        "popularity": 9,
-        "community": 3,
-        "freshness": 20,
-        "metadata": 15,
-        "documentation": 15,
-        "ecosystem_relevance": 20
-      },
-      "secret_findings": []
-    },
-    {
-      "full_name": "NVIDIA/SkillEvaluator",
-      "name": "SkillEvaluator",
-      "description": "Multi-tier framework for evaluating AI agent skills with quality gates, semantic overlap detection, synthetic evaluation dataset generation, and live agent evaluation that measures how skills affect agent behavior.",
-      "stars": 2117,
-      "forks": 286,
-      "language": "Python",
-      "license": "Apache-2.0",
-      "topics": [
-        "agent-evaluation",
-        "agent-plugins",
-        "agent-security",
-        "agent-skills",
-        "agentic-ai",
-        "benchmark",
-        "claude-code",
-        "codex",
-        "evaluate",
-        "evaluation",
-        "plugin",
-        "plugin-evaluation",
-        "security-scanner",
-        "skill-eval",
-        "skill-evals",
-        "skill-evaluation",
-        "skill-evaluator",
-        "skills"
-      ],
-      "updated_at": "2026-11-16T09:51:24Z",
-      "html_url": "https://github.com/NVIDIA/SkillEvaluator",
-      "categories": [
-        "skills",
-        "plugins"
-      ],
-      "score": 80,
-      "score_breakdown": {
-        "popularity": 13,
-        "community": 3,
-        "freshness": 20,
-        "metadata": 15,
-        "documentation": 15,
-        "ecosystem_relevance": 14
-      },
-      "secret_findings": []
-    },
-    {
-      "full_name": "zovulrira1974/blender-ai-copilot-assets",
-      "name": "blender-ai-copilot-assets",
-      "description": "An asset-savvy AI copilot for Blender—search Poly Haven, Sketchfab and Poly Pizza mid-conversation, check what fits, import after your confirmation, with 27 scene tools and a built-in MCP server alongside. · blender-ai-copilot-assets · blender · blender 3d · blender addon · blender plugin · blender extension · blender scripting · blender automation",
-      "stars": 508,
-      "forks": 15,
-      "language": null,
-      "license": "MIT",
-      "topics": [
-        "3d-automation",
-        "3d-modeling",
-        "blender",
-        "blender-addon",
-        "blender-agents",
-        "blender-ai",
-        "blender-assistant",
-        "blender-automation",
-        "blender-chatgpt",
-        "blender-copilot",
-        "blender-extension",
-        "blender-llm",
-        "blender-mcp",
-        "blender-plugin",
-        "blender-scripting",
-        "blender3d",
-        "bpy",
-        "mcp",
-        "mcp-server",
-        "model-context-protocol"
-      ],
-      "updated_at": "2026-11-16T02:54:34Z",
-      "html_url": "https://github.com/zovulrira1974/blender-ai-copilot-assets",
-      "categories": [
-        "mcp",
-        "plugins"
-      ],
-      "score": 76,
-      "score_breakdown": {
-        "popularity": 11,
-        "community": 1,
-        "freshness": 20,
-        "metadata": 15,
-        "documentation": 15,
-        "ecosystem_relevance": 14
-      },
-      "secret_findings": []
-    },
-    {
-      "full_name": "tiobeharxi1987/blender-ai-copilot-flow",
-      "name": "blender-ai-copilot-flow",
-      "description": "A controlled AI workflow for Blender: every copilot edit is a supervised tool call—proposed, approved, executed in sequence, cancellable after the current step and undoable by name—inside a visual studio with a built-in MCP server. · blender-ai-copilot-flow · blender · blender 3d · blender addon · blender plugin · blender extension",
-      "stars": 512,
-      "forks": 12,
-      "language": null,
-      "license": "MIT",
-      "topics": [
-        "3d-automation",
-        "3d-modeling",
-        "blender",
-        "blender-addon",
-        "blender-agents",
-        "blender-ai",
-        "blender-assistant",
-        "blender-automation",
-        "blender-chatgpt",
-        "blender-copilot",
-        "blender-extension",
-        "blender-llm",
-        "blender-mcp",
-        "blender-plugin",
-        "blender-scripting",
-        "blender3d",
-        "bpy",
-        "mcp",
-        "mcp-server",
-        "model-context-protocol"
-      ],
-      "updated_at": "2026-11-16T09:00:43Z",
-      "html_url": "https://github.com/tiobeharxi1987/blender-ai-copilot-flow",
-      "categories": [
-        "mcp",
-        "plugins"
-      ],
-      "score": 75,
-      "score_breakdown": {
-        "popularity": 11,
-        "community": 0,
-        "freshness": 20,
-        "metadata": 15,
-        "documentation": 15,
-        "ecosystem_relevance": 14
-      },
-      "secret_findings": []
-    },
-    {
-      "full_name": "agntn/memory",
-      "name": "memory",
-      "description": "Unified agent memory interface with Pi, OMP and MCP tools",
-      "stars": 0,
+      "full_name": "EricMoin/rolebox",
+      "name": "rolebox",
+      "description": "Agent plugin for major harnesses — DeepSeek Harness (DSH), OpenCode, Pi and Codex: define custom AI agent roles with per-role prompts, models, skills, permissions, memory and multi-agent orchestration.",
+      "stars": 4,
       "forks": 0,
       "language": "TypeScript",
       "license": "MIT",
       "topics": [
-        "agent-memory",
-        "cloudflare",
-        "mcp",
-        "memory",
-        "omp",
-        "pi",
-        "typescript"
+        "agent-orchestration",
+        "ai-agent",
+        "cli",
+        "codex",
+        "cordis-plugin",
+        "deepseek-harness",
+        "dsh",
+        "dsh-bundle",
+        "dsh-plugin",
+        "multi-agent",
+        "opencode",
+        "subagent",
+        "tui"
       ],
-      "updated_at": "2026-11-09T16:24:21Z",
-      "html_url": "https://github.com/agntn/memory",
-      "categories": [
-        "mcp",
-        "memory-rag",
-        "tools"
-      ],
-      "score": 70,
-      "score_breakdown": {
-        "popularity": 0,
-        "community": 0,
-        "freshness": 20,
-        "metadata": 15,
-        "documentation": 15,
-        "ecosystem_relevance": 20
-      },
-      "secret_findings": []
-    },
-    {
-      "full_name": "wiroai/wiroai.github.io",
-      "name": "wiroai.github.io",
-      "description": "Index of every open-source project from Wiro AI: plugins, SDKs, browser extensions, agent tools and example apps for 1,000+ AI models. Live at wiroai.github.io.",
-      "stars": 0,
-      "forks": 0,
-      "language": "HTML",
-      "license": "MIT",
-      "topics": [
-        "ai-api",
-        "ai-models",
-        "browser-extension",
-        "generative-ai",
-        "github-pages",
-        "image-generation",
-        "llm",
-        "mcp-server",
-        "open-source",
-        "plugins",
-        "sdk",
-        "video-generation",
-        "wiro",
-        "wiro-ai"
-      ],
-      "updated_at": "2026-11-16T04:55:17Z",
-      "html_url": "https://github.com/wiroai/wiroai.github.io",
+      "updated_at": "2026-11-04T07:28:27Z",
+      "html_url": "https://github.com/EricMoin/rolebox",
       "categories": [
         "mcp",
         "skills",
         "plugins",
-        "tools"
+        "memory-rag",
+        "workflows"
+      ],
+      "score": 73,
+      "score_breakdown": {
+        "popularity": 3,
+        "community": 0,
+        "freshness": 20,
+        "metadata": 15,
+        "documentation": 15,
+        "ecosystem_relevance": 20
+      },
+      "secret_findings": []
+    },
+    {
+      "full_name": "chhayankjain/AgentProbe",
+      "name": "AgentProbe",
+      "description": "AgentProbe — A systematic benchmarking and observability toolkit for production agentic LLM systems. Injects real-world failure modes, traces execution across agent frameworks, and measures reliability metrics (MTTR, failure rate, P99 latency) across LangGraph, LangChain, and AutoGen.",
+      "stars": 4,
+      "forks": 0,
+      "language": "Python",
+      "license": "MIT",
+      "topics": [
+        "autogen",
+        "benchmarking",
+        "chaos-engineering",
+        "fault-injection",
+        "langchain",
+        "langgraph",
+        "llm-agents",
+        "observability",
+        "opentelemetry",
+        "reliability"
+      ],
+      "updated_at": "2026-11-17T06:31:38Z",
+      "html_url": "https://github.com/chhayankjain/AgentProbe",
+      "categories": [
+        "frameworks",
+        "memory-rag",
+        "tools",
+        "workflows"
+      ],
+      "score": 73,
+      "score_breakdown": {
+        "popularity": 3,
+        "community": 0,
+        "freshness": 20,
+        "metadata": 15,
+        "documentation": 15,
+        "ecosystem_relevance": 20
+      },
+      "secret_findings": []
+    },
+    {
+      "full_name": "fivetran/connector_sdk_tools",
+      "name": "connector_sdk_tools",
+      "description": "AI coding agent tools to build connectors using Fivetran Connector SDK",
+      "stars": 92,
+      "forks": 2,
+      "language": "Python",
+      "license": "MIT",
+      "topics": [],
+      "updated_at": "2026-11-11T20:42:38Z",
+      "html_url": "https://github.com/fivetran/connector_sdk_tools",
+      "categories": [
+        "skills",
+        "plugins",
+        "tools",
+        "workflows"
+      ],
+      "score": 73,
+      "score_breakdown": {
+        "popularity": 8,
+        "community": 0,
+        "freshness": 20,
+        "metadata": 10,
+        "documentation": 15,
+        "ecosystem_relevance": 20
+      },
+      "secret_findings": []
+    },
+    {
+      "full_name": "martinambrus/haive",
+      "name": "haive",
+      "description": "Deterministic multi-CLI orchestration and AI agentic workflow utility.",
+      "stars": 5,
+      "forks": 0,
+      "language": "TypeScript",
+      "license": "MIT",
+      "topics": [
+        "ai",
+        "ai-agents",
+        "ai-tools",
+        "claude",
+        "claude-ai",
+        "claude-code",
+        "claude-code-skills",
+        "claude-skills",
+        "claudecode",
+        "claudecode-mcp",
+        "claudecode-subagents"
+      ],
+      "updated_at": "2026-11-12T17:01:14Z",
+      "html_url": "https://github.com/martinambrus/haive",
+      "categories": [
+        "mcp",
+        "plugins",
+        "workflows"
+      ],
+      "score": 73,
+      "score_breakdown": {
+        "popularity": 3,
+        "community": 0,
+        "freshness": 20,
+        "metadata": 15,
+        "documentation": 15,
+        "ecosystem_relevance": 20
+      },
+      "secret_findings": []
+    },
+    {
+      "full_name": "photo2skin/clippertask-mcp",
+      "name": "clippertask-mcp",
+      "description": "The creator marketplace for gaming, for AI agents: studios run CPM campaigns, creators join, post and get paid per view. Remote MCP server, Claude Code + Cursor plugins, Gemini CLI extension, agent skill.",
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "license": "MIT",
+      "topics": [
+        "agent-skills",
+        "ai",
+        "claude-code-plugin",
+        "creator-economy",
+        "cursor-plugin",
+        "gaming",
+        "gemini-cli-extension",
+        "influencer-marketing",
+        "mcp",
+        "mcp-server",
+        "model-context-protocol"
+      ],
+      "updated_at": "2026-11-17T10:48:42Z",
+      "html_url": "https://github.com/photo2skin/clippertask-mcp",
+      "categories": [
+        "mcp",
+        "skills",
+        "plugins"
       ],
       "score": 70,
       "score_breakdown": {
@@ -448,33 +433,72 @@
       "secret_findings": []
     },
     {
-      "full_name": "sipkigroup/witness",
-      "name": "witness",
-      "description": "Human approval for risky AI agent tool calls. Claude Code plugin, MCP proxy and SDK: allowed calls run, forbidden ones are refused, the rest wait for your passkey. Signed receipts in a Merkle log, checkable offline.",
+      "full_name": "ji-hun-git/agent-white-hat",
+      "name": "agent-white-hat",
+      "description": "The antivirus for people who use AI agents: full scans, real-time protection and quarantine, and a guard that reads repositories, skills, MCP servers and packages before Claude Code, Codex, Gemini CLI, Cursor or Copilot runs them.",
+      "stars": 0,
+      "forks": 0,
+      "language": "Python",
+      "license": "MIT",
+      "topics": [
+        "agent-skills",
+        "ai-agents",
+        "ai-security",
+        "antivirus",
+        "claude-code",
+        "codex",
+        "coding-agents",
+        "cursor",
+        "devsecops",
+        "gemini-cli",
+        "malware-detection",
+        "mcp",
+        "prompt-injection",
+        "security",
+        "static-analysis",
+        "supply-chain-security"
+      ],
+      "updated_at": "2026-11-12T10:20:18Z",
+      "html_url": "https://github.com/ji-hun-git/agent-white-hat",
+      "categories": [
+        "mcp",
+        "skills",
+        "plugins"
+      ],
+      "score": 70,
+      "score_breakdown": {
+        "popularity": 0,
+        "community": 0,
+        "freshness": 20,
+        "metadata": 15,
+        "documentation": 15,
+        "ecosystem_relevance": 20
+      },
+      "secret_findings": []
+    },
+    {
+      "full_name": "LevapVeeskela/lv24-seo-optimizer",
+      "name": "lv24-seo-optimizer",
+      "description": "Free-first SEO control plane for humans and AI agents: GSC, Yandex Webmaster/Metrika, Bing/IndexNow, CrUX, PSI, crawl + scheduled email reports via MCP, CLI and skills.",
       "stars": 0,
       "forks": 0,
       "language": "Python",
       "license": "Apache-2.0",
       "topics": [
-        "ai-agent-security",
         "ai-agents",
-        "audit-log",
-        "claude-code",
-        "claude-code-hooks",
-        "claude-code-plugin",
-        "human-in-the-loop",
+        "cli",
+        "google-search-console",
         "mcp",
-        "mcp-server",
-        "opentimestamps",
-        "passkey",
-        "webauthn"
+        "seo",
+        "seo-tools",
+        "yandex-webmaster"
       ],
-      "updated_at": "2026-11-12T17:33:55Z",
-      "html_url": "https://github.com/sipkigroup/witness",
+      "updated_at": "2026-11-11T08:41:25Z",
+      "html_url": "https://github.com/LevapVeeskela/lv24-seo-optimizer",
       "categories": [
         "mcp",
-        "plugins",
-        "tools"
+        "skills",
+        "workflows"
       ],
       "score": 70,
       "score_breakdown": {
@@ -488,21 +512,48 @@
       "secret_findings": []
     },
     {
-      "full_name": "kkkqkx123/wf-agent",
-      "name": "wf-agent",
-      "description": "A modular agent framework that unifies graph-based workflow orchestration with autonomous LLM agent loops in a Rust.",
-      "stars": 1,
-      "forks": 0,
-      "language": "Rust",
-      "license": "GPL-3.0",
+      "full_name": "NicolaiHerforth/hq-office",
+      "name": "hq-office",
+      "description": "A handheld-RPG office for your AI agents: every herdr lane is a worker, plus a panel to answer your HQ agent. A herdr plugin.",
+      "stars": 0,
+      "forks": 2,
+      "language": "TypeScript",
+      "license": "MIT",
       "topics": [],
-      "updated_at": "2026-11-12T16:45:08Z",
-      "html_url": "https://github.com/kkkqkx123/wf-agent",
+      "updated_at": "2026-11-12T00:58:21Z",
+      "html_url": "https://github.com/NicolaiHerforth/hq-office",
       "categories": [
         "mcp",
+        "plugins"
+      ],
+      "score": 69,
+      "score_breakdown": {
+        "popularity": 0,
+        "community": 10,
+        "freshness": 20,
+        "metadata": 10,
+        "documentation": 15,
+        "ecosystem_relevance": 14
+      },
+      "secret_findings": []
+    },
+    {
+      "full_name": "Mochi-Sora/SoraAgent",
+      "name": "SoraAgent",
+      "description": "a lighweight, low-cost and minimal agent framework for orchestrating LLM workflows, with native memory tiers, a state-first architecture and more.",
+      "stars": 1,
+      "forks": 0,
+      "language": "Python",
+      "license": "AGPL-3.0",
+      "topics": [],
+      "updated_at": "2026-11-17T10:09:21Z",
+      "html_url": "https://github.com/Mochi-Sora/SoraAgent",
+      "categories": [
+        "skills",
         "plugins",
         "frameworks",
-        "workflows"
+        "memory-rag",
+        "tools"
       ],
       "score": 66,
       "score_breakdown": {
@@ -516,29 +567,66 @@
       "secret_findings": []
     },
     {
-      "full_name": "dtau00/DesktopPilot",
-      "name": "DesktopPilot",
-      "description": "Drive any Windows or Linux (X11) desktop app from an AI agent: real UIA / AT-SPI clicks, JSON state, declarative app profiles, per-app plugins.",
+      "full_name": "BKproduct/kie-cli",
+      "name": "kie-cli",
+      "description": "Command-line client and MCP server for the KIE.ai image and video generation API",
       "stars": 0,
       "forks": 0,
-      "language": "Python",
-      "license": "MIT",
-      "topics": [],
-      "updated_at": "2026-11-16T09:39:08Z",
-      "html_url": "https://github.com/dtau00/DesktopPilot",
+      "language": "Go",
+      "license": "Apache-2.0",
+      "topics": [
+        "cli",
+        "golang",
+        "image-generation",
+        "kie-ai",
+        "mcp",
+        "video-generation"
+      ],
+      "updated_at": "2026-11-17T10:46:34Z",
+      "html_url": "https://github.com/BKproduct/kie-cli",
       "categories": [
         "mcp",
-        "skills",
-        "plugins"
+        "skills"
       ],
-      "score": 65,
+      "score": 64,
       "score_breakdown": {
         "popularity": 0,
         "community": 0,
         "freshness": 20,
-        "metadata": 10,
+        "metadata": 15,
         "documentation": 15,
-        "ecosystem_relevance": 20
+        "ecosystem_relevance": 14
+      },
+      "secret_findings": []
+    },
+    {
+      "full_name": "tqx-ai/tqx-ts",
+      "name": "tqx-ts",
+      "description": "TQX agent tooling: skills, CLI, and SDK",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "license": "GPL-3.0",
+      "topics": [
+        "agent",
+        "agent-skills",
+        "investment",
+        "trading-agent"
+      ],
+      "updated_at": "2026-11-11T06:50:44Z",
+      "html_url": "https://github.com/tqx-ai/tqx-ts",
+      "categories": [
+        "mcp",
+        "plugins"
+      ],
+      "score": 64,
+      "score_breakdown": {
+        "popularity": 0,
+        "community": 0,
+        "freshness": 20,
+        "metadata": 15,
+        "documentation": 15,
+        "ecosystem_relevance": 14
       },
       "secret_findings": []
     },
@@ -586,46 +674,20 @@
       "secret_findings": []
     },
     {
-      "full_name": "edisonymy/forecast-scaffold",
-      "name": "forecast-scaffold",
-      "description": "General-purpose forecasting scaffold for AI agents: calibrated, tracked, Brier-scored probability forecasts as a Claude Code plugin (skills + zero-dependency Python core + Metaculus tournament harness)",
-      "stars": 2,
-      "forks": 0,
-      "language": "Python",
-      "license": "NOASSERTION",
-      "topics": [],
-      "updated_at": "2026-11-12T10:03:15Z",
-      "html_url": "https://github.com/edisonymy/forecast-scaffold",
-      "categories": [
-        "skills",
-        "plugins"
-      ],
-      "score": 61,
-      "score_breakdown": {
-        "popularity": 2,
-        "community": 0,
-        "freshness": 20,
-        "metadata": 10,
-        "documentation": 15,
-        "ecosystem_relevance": 14
-      },
-      "secret_findings": []
-    },
-    {
-      "full_name": "TunaTuskW/fish-skill-tree",
-      "name": "fish-skill-tree",
-      "description": "Modular AI Agent Skill Tree: 4-Sector Master Plugin Routers (/finance, /engineering, /design, /marketing), 320+ On-Demand Skills & MCP Configs",
+      "full_name": "gnznovus/project-purrfect-4.0",
+      "name": "project-purrfect-4.0",
+      "description": "Project Purrfect 4.0 is a modular, Python-based AI intelligence platform built for long-term extensibility. It unifies shared reasoning, multi-agent orchestration, memory, and knowledge/RAG through Purr Parent, empowering specialized Purr Children to assist users, diagnose issues, and execute authorized product operations.",
       "stars": 0,
       "forks": 0,
       "language": "Python",
       "license": null,
       "topics": [],
-      "updated_at": "2026-10-30T21:50:15Z",
-      "html_url": "https://github.com/TunaTuskW/fish-skill-tree",
+      "updated_at": "2026-10-19T02:02:47Z",
+      "html_url": "https://github.com/gnznovus/project-purrfect-4.0",
       "categories": [
-        "mcp",
-        "skills",
-        "plugins"
+        "plugins",
+        "memory-rag",
+        "workflows"
       ],
       "score": 60,
       "score_breakdown": {
@@ -639,19 +701,19 @@
       "secret_findings": []
     },
     {
-      "full_name": "applitools/mcp",
-      "name": "mcp",
-      "description": "Applitools MCP server for AI coding assistants",
+      "full_name": "melihcansayar/agent-statement-reconciler",
+      "name": "agent-statement-reconciler",
+      "description": "AI agent that reconciles overseas agent and intercompany statements against the ledger: exceptions only, proposed journals, human approval, MCP server.",
       "stars": 0,
       "forks": 0,
-      "language": null,
-      "license": "NOASSERTION",
+      "language": "TypeScript",
+      "license": "MIT",
       "topics": [],
-      "updated_at": "2026-11-12T08:42:50Z",
-      "html_url": "https://github.com/applitools/mcp",
+      "updated_at": "2026-11-16T12:45:55Z",
+      "html_url": "https://github.com/melihcansayar/agent-statement-reconciler",
       "categories": [
         "mcp",
-        "workflows"
+        "skills"
       ],
       "score": 59,
       "score_breakdown": {
@@ -665,269 +727,195 @@
       "secret_findings": []
     },
     {
-      "full_name": "Adonis0123/agent-env",
-      "name": "agent-env",
-      "description": "One manifest for the rules and skills of every AI agent you run",
-      "stars": 0,
+      "full_name": "cccodder/dsh-remote-console",
+      "name": "dsh-remote-console",
+      "description": "DSH (DeepSeek Harness) plugin — right-sidebar SSH terminal where you and your AI agent share one PTY, one activity log, and one audit trail.",
+      "stars": 3,
       "forks": 0,
-      "language": "Python",
+      "language": "JavaScript",
       "license": "MIT",
-      "topics": [],
-      "updated_at": "2026-11-11T15:50:56Z",
-      "html_url": "https://github.com/Adonis0123/agent-env",
+      "topics": [
+        "ai-agent",
+        "deepseek",
+        "deepseek-harness",
+        "dsh",
+        "dsh-plugin",
+        "dsh-ssh",
+        "pty",
+        "remote-console",
+        "remote-terminal",
+        "ssh",
+        "ssh-client",
+        "terminal"
+      ],
+      "updated_at": "2026-11-08T11:12:16Z",
+      "html_url": "https://github.com/cccodder/dsh-remote-console",
       "categories": [
-        "skills",
         "plugins"
       ],
       "score": 59,
       "score_breakdown": {
+        "popularity": 2,
+        "community": 0,
+        "freshness": 20,
+        "metadata": 15,
+        "documentation": 15,
+        "ecosystem_relevance": 7
+      },
+      "secret_findings": []
+    },
+    {
+      "full_name": "bymaxone/.github",
+      "name": ".github",
+      "description": "🚀 Bymax One — we architect and ship intelligent, AI-native and Web3-ready multi-tenant SaaS systems. Organization profile & community health files.",
+      "stars": 0,
+      "forks": 0,
+      "language": "JavaScript",
+      "license": "MIT",
+      "topics": [
+        "ai-agents",
+        "ai-native",
+        "llm",
+        "multi-tenant",
+        "open-source",
+        "rag",
+        "saas",
+        "software-architecture",
+        "web3"
+      ],
+      "updated_at": "2026-11-12T15:55:17Z",
+      "html_url": "https://github.com/bymaxone/.github",
+      "categories": [
+        "memory-rag"
+      ],
+      "score": 57,
+      "score_breakdown": {
+        "popularity": 0,
+        "community": 0,
+        "freshness": 20,
+        "metadata": 15,
+        "documentation": 15,
+        "ecosystem_relevance": 7
+      },
+      "secret_findings": []
+    },
+    {
+      "full_name": "siYuanJun/siYuanJun",
+      "name": "siYuanJun",
+      "description": "AI Agent 工程实践者，专注 Skill 工程 与 Harness 编排——把 AI 从「单次对话助手」推进为「可编排、可治理、可复用」的工程化生产力。",
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "license": null,
+      "topics": [
+        "config",
+        "github-config"
+      ],
+      "updated_at": "2026-11-12T08:58:22Z",
+      "html_url": "https://github.com/siYuanJun/siYuanJun",
+      "categories": [
+        "skills",
+        "memory-rag"
+      ],
+      "score": 54,
+      "score_breakdown": {
         "popularity": 0,
         "community": 0,
         "freshness": 20,
         "metadata": 10,
-        "documentation": 15,
+        "documentation": 10,
         "ecosystem_relevance": 14
       },
       "secret_findings": []
     },
     {
-      "full_name": "omriariav/omri-marketplace",
-      "name": "omri-marketplace",
-      "description": "Personal AI-agent marketplace of plugins, skills, commands, and utilities for Claude Code, Codex, and Grok.",
-      "stars": 3,
+      "full_name": "smk762/agent-composer",
+      "name": "agent-composer",
+      "description": "Ollama + Qdrant RAG behind Cloudflare Zero Trust, with ingest + chat APIs",
+      "stars": 0,
       "forks": 0,
       "language": "Python",
       "license": null,
       "topics": [],
-      "updated_at": "2026-09-14T19:46:25Z",
-      "html_url": "https://github.com/omriariav/omri-marketplace",
+      "updated_at": "2026-11-12T13:59:01Z",
+      "html_url": "https://github.com/smk762/agent-composer",
       "categories": [
-        "mcp",
-        "skills",
-        "plugins"
+        "memory-rag",
+        "tools"
       ],
-      "score": 58,
+      "score": 54,
       "score_breakdown": {
-        "popularity": 2,
+        "popularity": 0,
         "community": 0,
-        "freshness": 16,
+        "freshness": 20,
         "metadata": 5,
         "documentation": 15,
-        "ecosystem_relevance": 20
+        "ecosystem_relevance": 14
       },
       "secret_findings": []
     },
     {
-      "full_name": "funwithagents/wica-framework",
-      "name": "wica-framework",
-      "description": "Agent framework for multimodal, embodied interaction: a state-first World, reactive Inputs, cancellable Commands and a provider-agnostic Agentic loop (Anthropic, OpenAI, Gemini, Mistral, HF).",
+      "full_name": "maxbeech/helm7-agent-tools",
+      "name": "helm7-agent-tools",
+      "description": "SDK, CLI and MCP integrations for Helm7",
+      "stars": 0,
+      "forks": 0,
+      "language": "TypeScript",
+      "license": "Apache-2.0",
+      "topics": [],
+      "updated_at": "2026-11-13T20:03:15Z",
+      "html_url": "https://github.com/maxbeech/helm7-agent-tools",
+      "categories": [
+        "mcp",
+        "tools"
+      ],
+      "score": 54,
+      "score_breakdown": {
+        "popularity": 0,
+        "community": 0,
+        "freshness": 20,
+        "metadata": 10,
+        "documentation": 10,
+        "ecosystem_relevance": 14
+      },
+      "secret_findings": []
+    },
+    {
+      "full_name": "AaronYue77/ABO-Adaptive-RAG",
+      "name": "ABO-Adaptive-RAG",
+      "description": "ABO catalogue, Qwen3-VL-8B evidence and read-only accessory compatibility built on Adaptive-rag.",
       "stars": 1,
+      "forks": 0,
+      "language": "Python",
+      "license": "MIT",
+      "topics": [],
+      "updated_at": "2026-11-17T06:26:30Z",
+      "html_url": "https://github.com/AaronYue77/ABO-Adaptive-RAG",
+      "categories": [
+        "memory-rag"
+      ],
+      "score": 53,
+      "score_breakdown": {
+        "popularity": 1,
+        "community": 0,
+        "freshness": 20,
+        "metadata": 10,
+        "documentation": 15,
+        "ecosystem_relevance": 7
+      },
+      "secret_findings": []
+    },
+    {
+      "full_name": "balogvn/aimart",
+      "name": "aimart",
+      "description": "Pay-per-call MCP server + API: messy CSV/JSON/Excel/SPSS/Stata/SAS to clean Parquet. AI agents pay in USDC via x402.",
+      "stars": 0,
       "forks": 0,
       "language": "Python",
       "license": "Apache-2.0",
-      "topics": [
-        "agent-framework",
-        "ai-agents",
-        "asyncio",
-        "conversational-ai",
-        "embodied-ai",
-        "human-machine-interaction",
-        "human-robot-interaction",
-        "llm",
-        "multimodal",
-        "multimodal-ai",
-        "python",
-        "robotics"
-      ],
-      "updated_at": "2026-11-12T09:08:18Z",
-      "html_url": "https://github.com/funwithagents/wica-framework",
-      "categories": [
-        "frameworks"
-      ],
-      "score": 58,
-      "score_breakdown": {
-        "popularity": 1,
-        "community": 0,
-        "freshness": 20,
-        "metadata": 15,
-        "documentation": 15,
-        "ecosystem_relevance": 7
-      },
-      "secret_findings": []
-    },
-    {
-      "full_name": "purview-dev/build-sdk",
-      "name": "build-sdk",
-      "description": "A reusable MSBuild SDK providing convention-driven .NET project defaults, code style, analyzers, testing frameworks, package management, and agent tooling.",
-      "stars": 1,
-      "forks": 0,
-      "language": "C#",
-      "license": "MIT",
-      "topics": [
-        "central-package-management",
-        "code-style",
-        "csharp",
-        "developer-experience",
-        "developer-tooling",
-        "devex",
-        "dotnet",
-        "msbuild",
-        "msbuild-sdk",
-        "nuget",
-        "project-templates",
-        "roslyn",
-        "roslyn-analyzers",
-        "roslyn-generators",
-        "tunit",
-        "xunit"
-      ],
-      "updated_at": "2026-11-12T14:18:07Z",
-      "html_url": "https://github.com/purview-dev/build-sdk",
-      "categories": [
-        "skills"
-      ],
-      "score": 58,
-      "score_breakdown": {
-        "popularity": 1,
-        "community": 0,
-        "freshness": 20,
-        "metadata": 15,
-        "documentation": 15,
-        "ecosystem_relevance": 7
-      },
-      "secret_findings": []
-    },
-    {
-      "full_name": "GerdsenAI/GerdsenAI-Agent-Skills",
-      "name": "GerdsenAI-Agent-Skills",
-      "description": "Consolidated agent skills for coding, intelligence gathering, SDR/Meshtastic/edge comms, Jetson, cyber defense, mapping, AI training, and engineering schematics. Branding: GRUMMAN AI / GerdsenAI. No GitHub Actions.",
-      "stars": 0,
-      "forks": 0,
-      "language": null,
-      "license": null,
       "topics": [],
-      "updated_at": "2026-11-12T09:51:23Z",
-      "html_url": "https://github.com/GerdsenAI/GerdsenAI-Agent-Skills",
-      "categories": [
-        "mcp",
-        "skills"
-      ],
-      "score": 54,
-      "score_breakdown": {
-        "popularity": 0,
-        "community": 0,
-        "freshness": 20,
-        "metadata": 5,
-        "documentation": 15,
-        "ecosystem_relevance": 14
-      },
-      "secret_findings": []
-    },
-    {
-      "full_name": "ilhammashal-svg/Zaytouna-Trading",
-      "name": "Zaytouna-Trading",
-      "description": "Zaytouna Trading - trade-company-orchestra plugin (9 AI agents) with demo workspace",
-      "stars": 0,
-      "forks": 0,
-      "language": null,
-      "license": null,
-      "topics": [],
-      "updated_at": "2026-11-16T09:45:54Z",
-      "html_url": "https://github.com/ilhammashal-svg/Zaytouna-Trading",
-      "categories": [
-        "skills",
-        "plugins"
-      ],
-      "score": 54,
-      "score_breakdown": {
-        "popularity": 0,
-        "community": 0,
-        "freshness": 20,
-        "metadata": 5,
-        "documentation": 15,
-        "ecosystem_relevance": 14
-      },
-      "secret_findings": []
-    },
-    {
-      "full_name": "A220man/A220man",
-      "name": "A220man",
-      "description": "Ryan Vo | AI, machine learning, AI agents, model evaluation and AI safety.",
-      "stars": 2,
-      "forks": 0,
-      "language": null,
-      "license": null,
-      "topics": [
-        "ai-agents",
-        "ai-safety",
-        "artificial-intelligence",
-        "machine-learning",
-        "mlops",
-        "model-evaluation",
-        "rag"
-      ],
-      "updated_at": "2026-11-12T07:25:17Z",
-      "html_url": "https://github.com/A220man/A220man",
-      "categories": [
-        "memory-rag"
-      ],
-      "score": 54,
-      "score_breakdown": {
-        "popularity": 2,
-        "community": 0,
-        "freshness": 20,
-        "metadata": 10,
-        "documentation": 15,
-        "ecosystem_relevance": 7
-      },
-      "secret_findings": []
-    },
-    {
-      "full_name": "KaelLee335/enterprise-support-agent-v2",
-      "name": "enterprise-support-agent-v2",
-      "description": "A hands-on Python Agent engineering project rebuilding an after-sales Dify workflow end to end with FastAPI, SQLite, LangChain, LangGraph, RAG, evaluation, and Docker. Simulated data; demo only.",
-      "stars": 0,
-      "forks": 0,
-      "language": "Python",
-      "license": null,
-      "topics": [],
-      "updated_at": "2026-11-16T03:20:31Z",
-      "html_url": "https://github.com/KaelLee335/enterprise-support-agent-v2",
-      "categories": [
-        "frameworks",
-        "memory-rag"
-      ],
-      "score": 54,
-      "score_breakdown": {
-        "popularity": 0,
-        "community": 0,
-        "freshness": 20,
-        "metadata": 5,
-        "documentation": 15,
-        "ecosystem_relevance": 14
-      },
-      "secret_findings": []
-    },
-    {
-      "full_name": "Legendario1ne/aictionbot-werkbank-mcp",
-      "name": "aictionbot-werkbank-mcp",
-      "description": "AICTIONBOT™ Werkbank by KULIC Advisory: 77 procurement functions as a public MCP server for AI assistants and company agents, 15 without sign-in. Docs, server.json and example calls.",
-      "stars": 0,
-      "forks": 0,
-      "language": null,
-      "license": null,
-      "topics": [
-        "accounts-payable",
-        "eurostat",
-        "germany",
-        "mcp",
-        "mcp-server",
-        "procurement",
-        "sanctions",
-        "sme"
-      ],
-      "updated_at": "2026-11-16T09:10:53Z",
-      "html_url": "https://github.com/Legendario1ne/aictionbot-werkbank-mcp",
+      "updated_at": "2026-11-12T02:02:16Z",
+      "html_url": "https://github.com/balogvn/aimart",
       "categories": [
         "mcp"
       ],
@@ -943,16 +931,16 @@
       "secret_findings": []
     },
     {
-      "full_name": "cag-agents/crm",
-      "name": "crm",
-      "description": "Autonomous omnichannel AI CRM platform with multi-channel messaging and agentic workflow orchestration.",
+      "full_name": "FelipeKreulich/axion",
+      "name": "axion",
+      "description": "A visual AI agent orchestration platform for building, connecting, and managing intelligent multi-agent workflows through an intuitive drag-and-drop interface.",
       "stars": 0,
       "forks": 0,
       "language": "TypeScript",
       "license": "MIT",
       "topics": [],
-      "updated_at": "2026-11-16T09:05:07Z",
-      "html_url": "https://github.com/cag-agents/crm",
+      "updated_at": "2026-11-17T07:52:22Z",
+      "html_url": "https://github.com/FelipeKreulich/axion",
       "categories": [
         "workflows"
       ],
@@ -968,18 +956,18 @@
       "secret_findings": []
     },
     {
-      "full_name": "Krystosterone/quebec-sante-cli",
-      "name": "quebec-sante-cli",
-      "description": "Québec ER, clinic and surgery-waitlist data for AI agents: agent skills on a deterministic CLI that returns MSSS open data as JSON, plus an hourly ER archive and history API",
+      "full_name": "torisetxd/velocity-sdk",
+      "name": "velocity-sdk",
+      "description": "Standalone Go SDK for multi-provider LLM streaming, context management, and agentic tool execution.",
       "stars": 0,
       "forks": 0,
-      "language": "TypeScript",
+      "language": "Go",
       "license": null,
       "topics": [],
-      "updated_at": "2026-11-12T15:52:08Z",
-      "html_url": "https://github.com/Krystosterone/quebec-sante-cli",
+      "updated_at": "2026-11-11T08:56:27Z",
+      "html_url": "https://github.com/torisetxd/velocity-sdk",
       "categories": [
-        "skills"
+        "mcp"
       ],
       "score": 47,
       "score_breakdown": {
@@ -993,52 +981,52 @@
       "secret_findings": []
     },
     {
-      "full_name": "mvysny/unified-test-mcp",
-      "name": "unified-test-mcp",
-      "description": "An MCP server that lets an AI agent test a running Vaadin Flow app in a real browser, in terms of Vaadin components rather than DOM nodes",
+      "full_name": "Sharathvc23/sm-airlock",
+      "name": "sm-airlock",
+      "description": "Attribute-level capability restriction for agent plugins in decentralized AI agent networks",
       "stars": 0,
       "forks": 0,
-      "language": "Java",
-      "license": null,
+      "language": "Python",
+      "license": "MIT",
       "topics": [],
-      "updated_at": "2026-11-16T08:45:28Z",
-      "html_url": "https://github.com/mvysny/unified-test-mcp",
+      "updated_at": "2026-07-14T18:05:54Z",
+      "html_url": "https://github.com/Sharathvc23/sm-airlock",
       "categories": [
-        "mcp"
+        "plugins"
       ],
-      "score": 42,
+      "score": 44,
       "score_breakdown": {
         "popularity": 0,
         "community": 0,
-        "freshness": 20,
-        "metadata": 5,
-        "documentation": 10,
+        "freshness": 12,
+        "metadata": 10,
+        "documentation": 15,
         "ecosystem_relevance": 7
       },
       "secret_findings": []
     },
     {
-      "full_name": "sheri-z/rag-demo",
-      "name": "rag-demo",
+      "full_name": "sachinarmal/ragpipeline",
+      "name": "ragpipeline",
       "description": "",
       "stars": 0,
       "forks": 0,
       "language": null,
       "license": null,
       "topics": [],
-      "updated_at": "2026-11-16T09:52:17Z",
-      "html_url": "https://github.com/sheri-z/rag-demo",
+      "updated_at": "2026-11-17T10:49:24Z",
+      "html_url": "https://github.com/sachinarmal/ragpipeline",
       "categories": [
-        "memory-rag"
+        "other"
       ],
-      "score": 27,
+      "score": 20,
       "score_breakdown": {
         "popularity": 0,
         "community": 0,
         "freshness": 20,
         "metadata": 0,
         "documentation": 0,
-        "ecosystem_relevance": 7
+        "ecosystem_relevance": 0
       },
       "secret_findings": []
     }
