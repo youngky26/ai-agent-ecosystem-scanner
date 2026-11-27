@@ -1,14 +1,14 @@
 {
-  "scan_id": 13,
-  "scanned_at": "2026-11-26T11:01:38.077570+00:00",
+  "scan_id": 14,
+  "scanned_at": "2026-11-27T10:58:49.512351+00:00",
   "count": 30,
   "repositories": [
     {
       "full_name": "omnigent-ai/omnigent",
       "name": "omnigent",
       "description": "Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policies and sandboxing, and collaborate in real time from any device.",
-      "stars": 11568,
-      "forks": 1946,
+      "stars": 11583,
+      "forks": 1951,
       "language": "Python",
       "license": "Apache-2.0",
       "topics": [
@@ -29,10 +29,11 @@
         "python",
         "sandbox"
       ],
-      "updated_at": "2026-11-26T10:38:38Z",
+      "updated_at": "2026-11-27T09:04:17Z",
       "html_url": "https://github.com/omnigent-ai/omnigent",
       "categories": [
         "mcp",
+        "plugins",
         "frameworks",
         "workflows"
       ],
@@ -48,45 +49,93 @@
       "secret_findings": []
     },
     {
-      "full_name": "footprintjs/agentfootprint",
-      "name": "agentfootprint",
-      "description": "TypeScript AI agent framework with recorded context, tool calls and decisions, plus configurable answer checks.",
-      "stars": 22,
-      "forks": 4,
-      "language": "TypeScript",
+      "full_name": "axisvela/praxo-core",
+      "name": "praxo-core",
+      "description": "Multi-language, embeddable AI agent framework with policy controls, HITL approval, checkpoints, events, and tool calling. Go reference plus Python, TypeScript, Java, Rust, C#, R, Ruby, PHP, Elixir, Lua, and more.",
+      "stars": 14,
+      "forks": 12,
+      "language": "Python",
       "license": "MIT",
       "topics": [
-        "agent-debugging",
         "agent-framework",
-        "agent-observability",
+        "agent-governance",
+        "agent-loop",
         "ai-agents",
-        "ai-safety",
-        "answer-validation",
-        "audit-trail",
-        "context-engineering",
-        "execution-provenance",
-        "explainable-ai",
-        "footprintjs",
+        "ai-governance",
+        "ai-governance-framework",
+        "ai-governance-layer",
+        "checkpoint",
+        "embeddable",
         "human-in-the-loop",
         "llm",
+        "llm-agents",
         "mcp",
-        "observability",
-        "orchestration",
-        "rag",
-        "tool-use",
-        "typescript"
+        "policy",
+        "policy-engine",
+        "tool-calling"
       ],
-      "updated_at": "2026-11-19T21:51:10Z",
-      "html_url": "https://github.com/footprintjs/agentfootprint",
+      "updated_at": "2026-11-26T15:27:23Z",
+      "html_url": "https://github.com/axisvela/praxo-core",
       "categories": [
         "mcp",
         "frameworks",
         "memory-rag",
+        "tools",
         "workflows"
       ],
-      "score": 79,
+      "score": 85,
       "score_breakdown": {
         "popularity": 5,
+        "community": 10,
+        "freshness": 20,
+        "metadata": 15,
+        "documentation": 15,
+        "ecosystem_relevance": 20
+      },
+      "secret_findings": []
+    },
+    {
+      "full_name": "andyrewlee/awesome-system-one",
+      "name": "awesome-system-one",
+      "description": "A list of System One models (also called decision models): Jev, the first, plus open and hosted alternatives, agents, tools, SDKs and benchmarks.",
+      "stars": 74,
+      "forks": 15,
+      "language": null,
+      "license": "CC0-1.0",
+      "topics": [
+        "awesome",
+        "awesome-jev",
+        "awesome-list",
+        "calibration",
+        "computer-use",
+        "decision-model",
+        "decision-models",
+        "intent-classification",
+        "jev",
+        "jev-alternative",
+        "llm-as-a-judge",
+        "model-routing",
+        "non-autoregressive",
+        "structured-outputs",
+        "system-one",
+        "system-one-models",
+        "typed-decisions",
+        "typesafe-ai",
+        "zero-shot-classification"
+      ],
+      "updated_at": "2026-11-25T20:46:31Z",
+      "html_url": "https://github.com/andyrewlee/awesome-system-one",
+      "categories": [
+        "mcp",
+        "skills",
+        "plugins",
+        "frameworks",
+        "memory-rag",
+        "tools"
+      ],
+      "score": 82,
+      "score_breakdown": {
+        "popularity": 8,
         "community": 4,
         "freshness": 20,
         "metadata": 15,
@@ -96,58 +145,73 @@
       "secret_findings": []
     },
     {
-      "full_name": "opendatalab/Sciverse-Agent-Tools",
-      "name": "Sciverse-Agent-Tools",
-      "description": "Standardized tool schemas and SDKs that expose Sciverse Open Platform retrieval capabilities to LLM agents.",
-      "stars": 133,
-      "forks": 7,
+      "full_name": "JJJY9/aligo-travel-assistant",
+      "name": "aligo-travel-assistant",
+      "description": "基于 AgentScope + DeepSeek 的多智能体差旅规划系统：Plan-and-Execute 意图识别与优先级并行调度、两层记忆、RAG 知识库（Milvus Lite）、FastAPI Web 界面与 SSE 进度、联网搜索、熔断与重试",
+      "stars": 1,
+      "forks": 1,
       "language": "Python",
-      "license": "NOASSERTION",
-      "topics": [],
-      "updated_at": "2026-11-26T07:55:05Z",
-      "html_url": "https://github.com/opendatalab/Sciverse-Agent-Tools",
+      "license": "MIT",
+      "topics": [
+        "agentscope",
+        "deepseek",
+        "fastapi",
+        "llm",
+        "milvus",
+        "multi-agent",
+        "python",
+        "rag",
+        "travel-assistant"
+      ],
+      "updated_at": "2026-11-23T04:41:36Z",
+      "html_url": "https://github.com/JJJY9/aligo-travel-assistant",
       "categories": [
         "mcp",
         "skills",
         "plugins",
-        "frameworks",
-        "memory-rag",
-        "tools"
+        "memory-rag"
       ],
-      "score": 75,
+      "score": 81,
       "score_breakdown": {
-        "popularity": 9,
-        "community": 1,
+        "popularity": 1,
+        "community": 10,
         "freshness": 20,
-        "metadata": 10,
+        "metadata": 15,
         "documentation": 15,
         "ecosystem_relevance": 20
       },
       "secret_findings": []
     },
     {
-      "full_name": "SonarSource/sonarqube-agent-plugins",
-      "name": "sonarqube-agent-plugins",
-      "description": "SonarQube Plugin for AI Agents",
-      "stars": 118,
-      "forks": 7,
-      "language": "JavaScript",
-      "license": "NOASSERTION",
+      "full_name": "StanislavV01/pdfctx",
+      "name": "pdfctx",
+      "description": "PDF retrieval for AI agents: structure-aware, table-first, citable to the page and box. Beats page-level RAG on FinanceBench with 10x fewer tokens. MCP + FastAPI.",
+      "stars": 0,
+      "forks": 1,
+      "language": "Python",
+      "license": "MIT",
       "topics": [
-        "agent",
-        "ai",
-        "sonarqube"
+        "ai-agents",
+        "fastapi",
+        "financebench",
+        "mcp",
+        "nextjs",
+        "pdf",
+        "python",
+        "rag",
+        "retrieval",
+        "sqlite"
       ],
-      "updated_at": "2026-11-24T07:39:14Z",
-      "html_url": "https://github.com/SonarSource/sonarqube-agent-plugins",
+      "updated_at": "2026-11-27T01:43:38Z",
+      "html_url": "https://github.com/StanislavV01/pdfctx",
       "categories": [
         "mcp",
-        "plugins"
+        "memory-rag"
       ],
-      "score": 73,
+      "score": 74,
       "score_breakdown": {
-        "popularity": 8,
-        "community": 1,
+        "popularity": 0,
+        "community": 10,
         "freshness": 20,
         "metadata": 15,
         "documentation": 15,
@@ -156,60 +220,10 @@
       "secret_findings": []
     },
     {
-      "full_name": "urmzd/saige",
-      "name": "saige",
-      "description": "Go SDK, CLI and MCP server for streaming agents, tools, memory, retrieval and evaluations, with pluggable model providers and durable execution.",
-      "stars": 6,
-      "forks": 0,
-      "language": "Go",
-      "license": "Apache-2.0",
-      "topics": [
-        "ai-agents",
-        "ai-sdk",
-        "anthropic",
-        "cli",
-        "conversation-tree",
-        "go",
-        "knowledge-graph",
-        "llm",
-        "mcp",
-        "mcp-server",
-        "ollama",
-        "openai",
-        "postgresql",
-        "rag",
-        "rlhf",
-        "showcase",
-        "streaming",
-        "tool-use",
-        "tui",
-        "vector-search"
-      ],
-      "updated_at": "2026-11-11T23:00:28Z",
-      "html_url": "https://github.com/urmzd/saige",
-      "categories": [
-        "mcp",
-        "skills",
-        "memory-rag",
-        "tools",
-        "workflows"
-      ],
-      "score": 73,
-      "score_breakdown": {
-        "popularity": 3,
-        "community": 0,
-        "freshness": 20,
-        "metadata": 15,
-        "documentation": 15,
-        "ecosystem_relevance": 20
-      },
-      "secret_findings": []
-    },
-    {
       "full_name": "fluyeporlaweb/ai-agent-tools",
       "name": "ai-agent-tools",
       "description": "Curated directory of open-source AI tools for marketing and agents: MCP servers, skills, SDKs and workflows for Claude, Cursor, Windsurf and any MCP-compatible agent. Maintained by fluyeporlaweb.",
-      "stars": 3,
+      "stars": 6,
       "forks": 0,
       "language": null,
       "license": "MIT",
@@ -231,10 +245,11 @@
         "mcp-server",
         "model-context-protocol",
         "open-source",
+        "rag",
         "windsurf",
         "x-api"
       ],
-      "updated_at": "2026-11-26T10:53:20Z",
+      "updated_at": "2026-11-26T20:46:11Z",
       "html_url": "https://github.com/fluyeporlaweb/ai-agent-tools",
       "categories": [
         "mcp",
@@ -245,9 +260,9 @@
         "tools",
         "workflows"
       ],
-      "score": 72,
+      "score": 73,
       "score_breakdown": {
-        "popularity": 2,
+        "popularity": 3,
         "community": 0,
         "freshness": 20,
         "metadata": 15,
@@ -257,31 +272,70 @@
       "secret_findings": []
     },
     {
-      "full_name": "jachavarro2004/jhon-agent",
-      "name": "jhon-agent",
-      "description": "Let the agent run. Deliver only what is proven. An agent framework for Claude Code and pi.",
-      "stars": 1,
+      "full_name": "martinambrus/haive",
+      "name": "haive",
+      "description": "Deterministic multi-CLI orchestration and AI agentic workflow utility.",
+      "stars": 5,
       "forks": 0,
-      "language": "Go",
-      "license": "Apache-2.0",
+      "language": "TypeScript",
+      "license": "MIT",
       "topics": [
-        "agent-framework",
+        "ai",
         "ai-agents",
+        "ai-tools",
+        "claude",
+        "claude-ai",
         "claude-code",
-        "cli",
-        "coding-agent",
-        "developer-tools",
-        "golang",
-        "llm",
-        "pi-coding-agent",
-        "tdd"
+        "claude-code-skills",
+        "claude-skills",
+        "claudecode",
+        "claudecode-mcp",
+        "claudecode-subagents"
       ],
-      "updated_at": "2026-11-21T09:52:42Z",
-      "html_url": "https://github.com/jachavarro2004/jhon-agent",
+      "updated_at": "2026-11-12T17:01:14Z",
+      "html_url": "https://github.com/martinambrus/haive",
       "categories": [
         "mcp",
         "plugins",
-        "frameworks"
+        "workflows"
+      ],
+      "score": 73,
+      "score_breakdown": {
+        "popularity": 3,
+        "community": 0,
+        "freshness": 20,
+        "metadata": 15,
+        "documentation": 15,
+        "ecosystem_relevance": 20
+      },
+      "secret_findings": []
+    },
+    {
+      "full_name": "xixin9988-sys/nanomemory",
+      "name": "nanomemory",
+      "description": "Your AI. Your Memory. — persistent memory engine for AI agents: typed memories with provenance, hybrid retrieval, reversible lifecycle, MCP/DeepSeek Harness plugin, SDK/CLI/REST.",
+      "stars": 1,
+      "forks": 0,
+      "language": "Python",
+      "license": "MIT",
+      "topics": [
+        "agents",
+        "ai-memory",
+        "cognitive-architecture",
+        "deepseek-harness",
+        "fastapi",
+        "llm",
+        "mcp",
+        "memory-engine",
+        "python",
+        "retrieval"
+      ],
+      "updated_at": "2026-11-22T16:22:25Z",
+      "html_url": "https://github.com/xixin9988-sys/nanomemory",
+      "categories": [
+        "mcp",
+        "plugins",
+        "memory-rag"
       ],
       "score": 71,
       "score_breakdown": {
@@ -295,391 +349,161 @@
       "secret_findings": []
     },
     {
-      "full_name": "gamai-io/gamai-plugins",
-      "name": "gamai-plugins",
-      "description": "Portable trust, sandbox and team plugins for AI agents (MCP + CLI).",
-      "stars": 0,
-      "forks": 0,
-      "language": "Python",
-      "license": "MIT",
-      "topics": [
-        "agent-security",
-        "ai-agents",
-        "bubblewrap",
-        "mcp",
-        "python",
-        "sandbox",
-        "team",
-        "trust"
-      ],
-      "updated_at": "2026-11-26T10:50:23Z",
-      "html_url": "https://github.com/gamai-io/gamai-plugins",
-      "categories": [
-        "mcp",
-        "plugins",
-        "frameworks"
-      ],
-      "score": 70,
-      "score_breakdown": {
-        "popularity": 0,
-        "community": 0,
-        "freshness": 20,
-        "metadata": 15,
-        "documentation": 15,
-        "ecosystem_relevance": 20
-      },
-      "secret_findings": []
-    },
-    {
-      "full_name": "wiroai/wiroai.github.io",
-      "name": "wiroai.github.io",
-      "description": "Index of every open-source project from Wiro AI: plugins, SDKs, browser extensions, agent tools and example apps for 1,000+ AI models. Live at wiroai.github.io.",
-      "stars": 0,
-      "forks": 0,
-      "language": "HTML",
-      "license": "MIT",
-      "topics": [
-        "ai-api",
-        "ai-models",
-        "browser-extension",
-        "generative-ai",
-        "github-pages",
-        "image-generation",
-        "llm",
-        "mcp-server",
-        "open-source",
-        "plugins",
-        "sdk",
-        "video-generation",
-        "wiro",
-        "wiro-ai"
-      ],
-      "updated_at": "2026-11-16T04:55:17Z",
-      "html_url": "https://github.com/wiroai/wiroai.github.io",
-      "categories": [
-        "mcp",
-        "skills",
-        "plugins",
-        "tools"
-      ],
-      "score": 70,
-      "score_breakdown": {
-        "popularity": 0,
-        "community": 0,
-        "freshness": 20,
-        "metadata": 15,
-        "documentation": 15,
-        "ecosystem_relevance": 20
-      },
-      "secret_findings": []
-    },
-    {
-      "full_name": "ollygarden/skills",
-      "name": "skills",
-      "description": "OllyGarden's opinionated AI agent skills for OpenTelemetry and observability workflows",
-      "stars": 3,
-      "forks": 1,
-      "language": "Shell",
-      "license": "Apache-2.0",
-      "topics": [
-        "agent-skills",
-        "ai",
-        "claude-code",
-        "codex",
-        "cursor",
-        "observability",
-        "opentelemetry",
-        "opentelemetry-collector",
-        "otel",
-        "skills",
-        "tooling"
-      ],
-      "updated_at": "2026-10-03T14:09:48Z",
-      "html_url": "https://github.com/ollygarden/skills",
-      "categories": [
-        "skills",
-        "plugins"
-      ],
-      "score": 69,
-      "score_breakdown": {
-        "popularity": 2,
-        "community": 7,
-        "freshness": 16,
-        "metadata": 15,
-        "documentation": 15,
-        "ecosystem_relevance": 14
-      },
-      "secret_findings": []
-    },
-    {
-      "full_name": "bubbleptr/aoa",
-      "name": "aoa",
-      "description": "An Always-on Agent framework that runs 24x7 on an Inbox + Worker model: durable inbox, timers, memory, permissions and outbox in SQLite, with pi, Codex and DeepSeek Harness runtimes.",
-      "stars": 12,
-      "forks": 0,
-      "language": "TypeScript",
-      "license": "MIT",
-      "topics": [
-        "agent-framework",
-        "ai-agents",
-        "always-on-agent",
-        "bun",
-        "codex",
-        "coding-agent",
-        "deepseek",
-        "llm",
-        "mcp",
-        "sqlite",
-        "typescript"
-      ],
-      "updated_at": "2026-11-18T13:46:22Z",
-      "html_url": "https://github.com/bubbleptr/aoa",
-      "categories": [
-        "mcp",
-        "frameworks"
-      ],
-      "score": 68,
-      "score_breakdown": {
-        "popularity": 4,
-        "community": 0,
-        "freshness": 20,
-        "metadata": 15,
-        "documentation": 15,
-        "ecosystem_relevance": 14
-      },
-      "secret_findings": []
-    },
-    {
-      "full_name": "0xWhiteMage/tameru-compaction-system",
-      "name": "tameru-compaction-system",
-      "description": "Harness-agnostic context compaction for long-running AI agents. Deterministic, query-aware, fail-open: shortens bulky tool output, keeps every error, originals recoverable. Zero-LLM Python engine, CLI and plugins for agent harnesses.",
-      "stars": 6,
-      "forks": 2,
-      "language": "Python",
-      "license": "Apache-2.0",
-      "topics": [
-        "agent",
-        "ai-agents",
-        "context-compression",
-        "context-engineering",
-        "extractive-summarization",
-        "hermes-agent",
-        "llm",
-        "long-running-agents",
-        "prompt-compression",
-        "token-optimization"
-      ],
-      "updated_at": "2026-11-21T07:11:58Z",
-      "html_url": "https://github.com/0xWhiteMage/tameru-compaction-system",
-      "categories": [
-        "plugins"
-      ],
-      "score": 67,
-      "score_breakdown": {
-        "popularity": 3,
-        "community": 7,
-        "freshness": 20,
-        "metadata": 15,
-        "documentation": 15,
-        "ecosystem_relevance": 7
-      },
-      "secret_findings": []
-    },
-    {
-      "full_name": "Vondry/bolt-skills",
-      "name": "bolt-skills",
-      "description": "AI agent skills, workflows and verification scripts for building, securing and maintaining Bolt CMS websites. Works with Claude Code, Cursor, Gemini and other agents. ",
-      "stars": 0,
-      "forks": 0,
-      "language": "Shell",
-      "license": "NOASSERTION",
-      "topics": [],
-      "updated_at": "2026-11-11T11:15:10Z",
-      "html_url": "https://github.com/Vondry/bolt-skills",
-      "categories": [
-        "mcp",
-        "skills",
-        "plugins",
-        "frameworks"
-      ],
-      "score": 65,
-      "score_breakdown": {
-        "popularity": 0,
-        "community": 0,
-        "freshness": 20,
-        "metadata": 10,
-        "documentation": 15,
-        "ecosystem_relevance": 20
-      },
-      "secret_findings": []
-    },
-    {
-      "full_name": "hatim-mlf/skill-builder",
-      "name": "skill-builder",
-      "description": "Build AI agent skills (Claude Code, Codex) that load when they should, work the same way every time, and prove it: lint, trigger tests, task evals.",
-      "stars": 0,
-      "forks": 0,
-      "language": "Python",
-      "license": "MIT",
-      "topics": [],
-      "updated_at": "2026-11-26T10:44:26Z",
-      "html_url": "https://github.com/hatim-mlf/skill-builder",
-      "categories": [
-        "mcp",
-        "skills",
-        "plugins"
-      ],
-      "score": 65,
-      "score_breakdown": {
-        "popularity": 0,
-        "community": 0,
-        "freshness": 20,
-        "metadata": 10,
-        "documentation": 15,
-        "ecosystem_relevance": 20
-      },
-      "secret_findings": []
-    },
-    {
-      "full_name": "cnkids/dsh-office-toolkit",
-      "name": "dsh-office-toolkit",
-      "description": "DSH 宿主插件：给 AI 智能体增加读写 Word/Excel 的工具（docx/xlsx/xls/doc/rtf/odt，纯 JS 跨平台）｜ DSH host plugin: Word/Excel read & write tools for AI agents",
-      "stars": 3,
-      "forks": 2,
-      "language": "JavaScript",
-      "license": "MIT",
-      "topics": [
-        "deepseek",
-        "deepseek-harness",
-        "docx",
-        "dsh",
-        "dsh-office-toolkit",
-        "dsh-plugin",
-        "excel",
-        "office",
-        "word",
-        "xlsx"
-      ],
-      "updated_at": "2026-10-22T13:24:09Z",
-      "html_url": "https://github.com/cnkids/dsh-office-toolkit",
-      "categories": [
-        "plugins"
-      ],
-      "score": 65,
-      "score_breakdown": {
-        "popularity": 2,
-        "community": 10,
-        "freshness": 16,
-        "metadata": 15,
-        "documentation": 15,
-        "ecosystem_relevance": 7
-      },
-      "secret_findings": []
-    },
-    {
-      "full_name": "ashtonaliu/chess-check",
-      "name": "chess-check",
-      "description": "Finds what you're actually bad at in your Chess.com games: rating-adjusted opening stats, Stockfish analysis, a blunder-risk model, and an LLM coach whose every claim is verified.",
-      "stars": 0,
-      "forks": 0,
-      "language": "Python",
-      "license": null,
-      "topics": [
-        "chess",
-        "chrome-extension",
-        "claude",
-        "duckdb",
-        "evals",
-        "fastapi",
-        "llm",
-        "machine-learning",
-        "mcp",
-        "parquet",
-        "pytorch",
-        "rag",
-        "scikit-learn",
-        "stockfish",
-        "typescript"
-      ],
-      "updated_at": "2026-11-25T11:58:07Z",
-      "html_url": "https://github.com/ashtonaliu/chess-check",
-      "categories": [
-        "mcp",
-        "memory-rag",
-        "tools"
-      ],
-      "score": 65,
-      "score_breakdown": {
-        "popularity": 0,
-        "community": 0,
-        "freshness": 20,
-        "metadata": 10,
-        "documentation": 15,
-        "ecosystem_relevance": 20
-      },
-      "secret_findings": []
-    },
-    {
-      "full_name": "kwtsms/kwtsms-mcp",
-      "name": "kwtsms-mcp",
-      "description": "kwtSMS SMS gateway (Kuwait) as an MCP server: AI assistants send SMS, check balance, Sender IDs and coverage. Preview and test mode by default.",
-      "stars": 0,
-      "forks": 0,
-      "language": "JavaScript",
-      "license": "MIT",
-      "topics": [
-        "ai",
-        "kuwait",
-        "kwtsms",
-        "mcp",
-        "model-context-protocol",
-        "sms"
-      ],
-      "updated_at": "2026-11-18T23:54:46Z",
-      "html_url": "https://github.com/kwtsms/kwtsms-mcp",
-      "categories": [
-        "mcp",
-        "plugins"
-      ],
-      "score": 64,
-      "score_breakdown": {
-        "popularity": 0,
-        "community": 0,
-        "freshness": 20,
-        "metadata": 15,
-        "documentation": 15,
-        "ecosystem_relevance": 14
-      },
-      "secret_findings": []
-    },
-    {
-      "full_name": "virtnumber/mcp",
-      "name": "mcp",
-      "description": "Connect the Virtnumber MCP server to Claude, Claude Code, Cursor, VS Code and other AI agents: rent phone numbers and read their SMS.",
+      "full_name": "seventhfeed/seventhfeed-mcp",
+      "name": "seventhfeed-mcp",
+      "description": "Remote MCP server and Agent Skill for Seventh Feed: search AI marketing, SEO, GEO, writing and outreach tools.",
       "stars": 0,
       "forks": 0,
       "language": null,
       "license": "MIT",
       "topics": [
-        "ai-agents",
-        "claude",
-        "cursor",
+        "agent-skills",
+        "claude-code",
+        "claude-skills",
+        "cursor-plugin",
+        "gemini-cli-extension",
         "mcp",
         "mcp-server",
         "model-context-protocol",
-        "receive-sms",
-        "sms",
-        "virtual-phone-number"
+        "skill-md"
       ],
-      "updated_at": "2026-11-07T23:07:13Z",
-      "html_url": "https://github.com/virtnumber/mcp",
+      "updated_at": "2026-11-13T16:22:17Z",
+      "html_url": "https://github.com/seventhfeed/seventhfeed-mcp",
       "categories": [
         "mcp",
-        "skills"
+        "skills",
+        "plugins"
       ],
-      "score": 64,
+      "score": 70,
       "score_breakdown": {
         "popularity": 0,
+        "community": 0,
+        "freshness": 20,
+        "metadata": 15,
+        "documentation": 15,
+        "ecosystem_relevance": 20
+      },
+      "secret_findings": []
+    },
+    {
+      "full_name": "sushyk/SECFilingsAgenticRag",
+      "name": "SECFilingsAgenticRag",
+      "description": "Agentic RAG over SEC 10-K filings: .NET 10, Aspire, Microsoft Agent Framework, pgvector, MCP, Ollama",
+      "stars": 0,
+      "forks": 0,
+      "language": "C#",
+      "license": "MIT",
+      "topics": [
+        "agentic-rag",
+        "aspire",
+        "dotnet",
+        "llm",
+        "mcp",
+        "microsoft-agent-framework",
+        "ollama",
+        "pgvector",
+        "rag",
+        "semantic-search"
+      ],
+      "updated_at": "2026-11-15T08:04:18Z",
+      "html_url": "https://github.com/sushyk/SECFilingsAgenticRag",
+      "categories": [
+        "mcp",
+        "skills",
+        "frameworks",
+        "memory-rag",
+        "tools",
+        "workflows"
+      ],
+      "score": 70,
+      "score_breakdown": {
+        "popularity": 0,
+        "community": 0,
+        "freshness": 20,
+        "metadata": 15,
+        "documentation": 15,
+        "ecosystem_relevance": 20
+      },
+      "secret_findings": []
+    },
+    {
+      "full_name": "cargopete/kitbag",
+      "name": "kitbag",
+      "description": "Carry your AI agent setup (MCP servers, rules, skills) between Claude Code, Cursor, Codex and more. Secrets become env refs.",
+      "stars": 1,
+      "forks": 0,
+      "language": "Rust",
+      "license": "MIT",
+      "topics": [],
+      "updated_at": "2026-11-26T15:36:15Z",
+      "html_url": "https://github.com/cargopete/kitbag",
+      "categories": [
+        "mcp",
+        "skills",
+        "plugins"
+      ],
+      "score": 66,
+      "score_breakdown": {
+        "popularity": 1,
+        "community": 0,
+        "freshness": 20,
+        "metadata": 10,
+        "documentation": 15,
+        "ecosystem_relevance": 20
+      },
+      "secret_findings": []
+    },
+    {
+      "full_name": "kkkqkx123/wf-agent",
+      "name": "wf-agent",
+      "description": "A modular agent framework that unifies graph-based workflow orchestration with autonomous LLM agent loops in a Rust.",
+      "stars": 1,
+      "forks": 0,
+      "language": "Rust",
+      "license": "GPL-3.0",
+      "topics": [],
+      "updated_at": "2026-11-12T16:45:08Z",
+      "html_url": "https://github.com/kkkqkx123/wf-agent",
+      "categories": [
+        "mcp",
+        "plugins",
+        "frameworks",
+        "workflows"
+      ],
+      "score": 66,
+      "score_breakdown": {
+        "popularity": 1,
+        "community": 0,
+        "freshness": 20,
+        "metadata": 10,
+        "documentation": 15,
+        "ecosystem_relevance": 20
+      },
+      "secret_findings": []
+    },
+    {
+      "full_name": "devbasex/ai-plugins",
+      "name": "ai-plugins",
+      "description": "AI Agent Marketplace - Claude Codeプラグインマーケットプレイス",
+      "stars": 1,
+      "forks": 0,
+      "language": "Python",
+      "license": "MIT",
+      "topics": [
+        "ai-agents",
+        "claude-code",
+        "claude-code-plugin",
+        "plugin-marketplace"
+      ],
+      "updated_at": "2026-11-12T10:03:19Z",
+      "html_url": "https://github.com/devbasex/ai-plugins",
+      "categories": [
+        "mcp",
+        "plugins"
+      ],
+      "score": 65,
+      "score_breakdown": {
+        "popularity": 1,
         "community": 0,
         "freshness": 20,
         "metadata": 15,
@@ -689,25 +513,71 @@
       "secret_findings": []
     },
     {
-      "full_name": "Navid-A-08/AI-ChatBot",
-      "name": "AI-ChatBot",
-      "description": "Context-engineering chatbot: memory, RAG, context ranking, tool use and an evaluation framework",
+      "full_name": "k8nstantin/schema-forge",
+      "name": "schema-forge",
+      "description": "Open-source schema design for the agentic age: an AI agent and an architect on one live design, every change checked against the team's rules. Every database a plugin (PostgreSQL, MySQL, Apache Iceberg first), Apache DataFusion at the center.",
+      "stars": 1,
+      "forks": 0,
+      "language": "HTML",
+      "license": "Apache-2.0",
+      "topics": [
+        "ai-agents",
+        "apache-arrow",
+        "apache-iceberg",
+        "cdc",
+        "claude-code",
+        "coding-agent",
+        "data-architecture",
+        "data-modeling",
+        "datafusion",
+        "debezium",
+        "lakehouse",
+        "mcp",
+        "mysql",
+        "plugins",
+        "postgresql",
+        "rust",
+        "schema-design",
+        "schema-management",
+        "schema-rules"
+      ],
+      "updated_at": "2026-11-25T00:40:11Z",
+      "html_url": "https://github.com/k8nstantin/schema-forge",
+      "categories": [
+        "mcp",
+        "plugins"
+      ],
+      "score": 65,
+      "score_breakdown": {
+        "popularity": 1,
+        "community": 0,
+        "freshness": 20,
+        "metadata": 15,
+        "documentation": 15,
+        "ecosystem_relevance": 14
+      },
+      "secret_findings": []
+    },
+    {
+      "full_name": "yuliang630/studyloop",
+      "name": "studyloop",
+      "description": "StudyLoop · 学习闭环 — learning plugin for AI agents: memory, BKT mastery, cited retrieval, review scheduling, artifact scaffolding (exams, lesson plans, handouts, curriculum). Python stdlib only.",
       "stars": 0,
       "forks": 0,
       "language": "Python",
       "license": "MIT",
       "topics": [
-        "chatbot",
-        "context-engineering",
-        "llm",
+        "ai-agent",
+        "education",
+        "learning",
         "python",
-        "rag"
+        "spaced-repetition"
       ],
-      "updated_at": "2026-11-10T21:22:16Z",
-      "html_url": "https://github.com/Navid-A-08/AI-ChatBot",
+      "updated_at": "2026-11-27T10:11:40Z",
+      "html_url": "https://github.com/yuliang630/studyloop",
       "categories": [
-        "memory-rag",
-        "tools"
+        "skills",
+        "plugins"
       ],
       "score": 64,
       "score_breakdown": {
@@ -752,18 +622,68 @@
       "secret_findings": []
     },
     {
-      "full_name": "daftpunkwave/game-agent",
-      "name": "game-agent",
-      "description": "A universal game AI agent runtime harness. Connect any game API or MCP server to drive AI-NPCs, AI factions, and autonomous gameplay—featuring a built-in Behavior Tree, structured memory, and headless CLI/TUI cluster monitoring.",
-      "stars": 1,
-      "forks": 0,
-      "language": null,
+      "full_name": "nhrbuilds/flashbrowse",
+      "name": "flashbrowse",
+      "description": "Token-compressed, AXTree-native headless browser and MCP server for AI agents. Sub-100ms CDP automation in pure Rust. Zero Python.",
+      "stars": 106,
+      "forks": 9,
+      "language": "Rust",
+      "license": "Apache-2.0",
+      "topics": [],
+      "updated_at": "2026-11-25T18:17:46Z",
+      "html_url": "https://github.com/nhrbuilds/flashbrowse",
+      "categories": [
+        "mcp"
+      ],
+      "score": 62,
+      "score_breakdown": {
+        "popularity": 8,
+        "community": 2,
+        "freshness": 20,
+        "metadata": 10,
+        "documentation": 15,
+        "ecosystem_relevance": 7
+      },
+      "secret_findings": []
+    },
+    {
+      "full_name": "TranChiKha0395/corpus-lint",
+      "name": "corpus-lint",
+      "description": "Zero-dependency linter to audit and sanitize AI/RAG knowledge-base documents before ingestion.",
+      "stars": 0,
+      "forks": 1,
+      "language": "Python",
       "license": "MIT",
       "topics": [],
-      "updated_at": "2026-11-26T07:44:38Z",
-      "html_url": "https://github.com/daftpunkwave/game-agent",
+      "updated_at": "2026-11-26T16:01:25Z",
+      "html_url": "https://github.com/TranChiKha0395/corpus-lint",
       "categories": [
-        "mcp",
+        "memory-rag"
+      ],
+      "score": 62,
+      "score_breakdown": {
+        "popularity": 0,
+        "community": 10,
+        "freshness": 20,
+        "metadata": 10,
+        "documentation": 15,
+        "ecosystem_relevance": 7
+      },
+      "secret_findings": []
+    },
+    {
+      "full_name": "Muguett-DBY/bailu-power-trading",
+      "name": "bailu-power-trading",
+      "description": "电力交易框架：给任何 AI agent 的电力交易技能、知识库、分省电价参数与计算工具。A power-trading framework for any AI agent: skills, knowledge base, provincial price parameters and calculation tools.",
+      "stars": 1,
+      "forks": 0,
+      "language": "Go",
+      "license": "MIT",
+      "topics": [],
+      "updated_at": "2026-11-26T20:50:08Z",
+      "html_url": "https://github.com/Muguett-DBY/bailu-power-trading",
+      "categories": [
+        "skills",
         "plugins"
       ],
       "score": 60,
@@ -778,35 +698,16 @@
       "secret_findings": []
     },
     {
-      "full_name": "kylesmile1103/trivia",
-      "name": "trivia",
-      "description": "A visual editor for React that edits your real source code, byte for byte: Rust/OXC span splices behind a Vite plugin, an MCP endpoint for AI agents, and contract-aware tools for Refine + shadcn on OpenAPI.",
+      "full_name": "nexdnexd/nexd-plugin",
+      "name": "nexd-plugin",
+      "description": "Create, preview, and publish rich media ads with Nexd. Includes MCP configuration and workflow skills for AI agents.",
       "stars": 0,
       "forks": 0,
-      "language": "TypeScript",
-      "license": null,
-      "topics": [
-        "ai-agents",
-        "ast",
-        "codemod",
-        "developer-tools",
-        "local-first",
-        "mcp",
-        "model-context-protocol",
-        "napi-rs",
-        "openapi",
-        "oxc",
-        "react",
-        "refine",
-        "rust",
-        "shadcn-ui",
-        "tauri",
-        "typescript",
-        "visual-editor",
-        "vite-plugin"
-      ],
-      "updated_at": "2026-11-25T15:03:56Z",
-      "html_url": "https://github.com/kylesmile1103/trivia",
+      "language": null,
+      "license": "MIT",
+      "topics": [],
+      "updated_at": "2026-11-26T10:44:24Z",
+      "html_url": "https://github.com/nexdnexd/nexd-plugin",
       "categories": [
         "mcp",
         "plugins"
@@ -823,59 +724,27 @@
       "secret_findings": []
     },
     {
-      "full_name": "yourbossdonpely/skillget",
-      "name": "skillget",
-      "description": "Skillget by Don PELY — harvest open-source AI agent skills from the TypingMind directory into local SKILL.md folders.",
-      "stars": 1,
-      "forks": 0,
-      "language": "Python",
-      "license": "MIT",
-      "topics": [
-        "ai-agents",
-        "cli",
-        "python",
-        "skills",
-        "web-scraping"
-      ],
-      "updated_at": "2026-11-26T10:51:25Z",
-      "html_url": "https://github.com/yourbossdonpely/skillget",
-      "categories": [
-        "skills"
-      ],
-      "score": 58,
-      "score_breakdown": {
-        "popularity": 1,
-        "community": 0,
-        "freshness": 20,
-        "metadata": 15,
-        "documentation": 15,
-        "ecosystem_relevance": 7
-      },
-      "secret_findings": []
-    },
-    {
-      "full_name": "hoed/gajahmada-ai",
-      "name": "gajahmada-ai",
-      "description": "Sovereign Decentralized AI & Web3 Node Architecture Autonomous - Neural Inference · 384-d Semantic Vector RAG · SHA-256 Proof-of-Work Audit Ledger · Ed25519 Cryptographic Identity · P2P Mesh Topology",
+      "full_name": "s366fm/life-decision-advisor",
+      "name": "life-decision-advisor",
+      "description": "An AI agent skill that turns vague life confusion into comparable options and an executable next step. 中英双语 | 人生决策顾问 Skill",
       "stars": 0,
       "forks": 0,
-      "language": "Python",
+      "language": null,
       "license": "MIT",
       "topics": [
-        "ai",
-        "ai-indonesia",
-        "blockchain-ai",
-        "blockchain-ai-agent",
-        "blockchain-technology",
-        "gajahmada",
-        "gajahmada-ai",
-        "indonesia",
-        "indonesianai"
+        "agent-skill",
+        "ai-agent",
+        "bilingual",
+        "chinese",
+        "claude-skills",
+        "decision-making",
+        "life-coach",
+        "prompt-engineering"
       ],
-      "updated_at": "2026-11-22T17:20:12Z",
-      "html_url": "https://github.com/hoed/gajahmada-ai",
+      "updated_at": "2026-11-27T10:56:50Z",
+      "html_url": "https://github.com/s366fm/life-decision-advisor",
       "categories": [
-        "memory-rag"
+        "skills"
       ],
       "score": 57,
       "score_breakdown": {
@@ -889,49 +758,42 @@
       "secret_findings": []
     },
     {
-      "full_name": "CodeSigils/hermes-doom-config",
-      "name": "hermes-doom-config",
-      "description": "Doom Emacs config with Hermes AI Agent skill — agent-aware module setup, curator-driven sync, automated validation",
+      "full_name": "MSbtff/msa-toolguard",
+      "name": "msa-toolguard",
+      "description": "Deterministic AI agent tool guardrails, evidence ledger, auto-repair verifier, durable JDBC/Redis execution stores, and Python MCP/A2A harness SDK",
       "stars": 0,
       "forks": 0,
-      "language": "Python",
-      "license": "MIT",
-      "topics": [
-        "doom-config",
-        "doom-emacs",
-        "emacs",
-        "emacs-config",
-        "hermes-agent",
-        "org-mode"
-      ],
-      "updated_at": "2026-06-24T12:46:46Z",
-      "html_url": "https://github.com/CodeSigils/hermes-doom-config",
+      "language": "Java",
+      "license": null,
+      "topics": [],
+      "updated_at": "2026-11-19T14:03:05Z",
+      "html_url": "https://github.com/MSbtff/msa-toolguard",
       "categories": [
-        "skills",
-        "workflows"
+        "mcp",
+        "tools"
       ],
-      "score": 56,
+      "score": 54,
       "score_breakdown": {
         "popularity": 0,
         "community": 0,
-        "freshness": 12,
-        "metadata": 15,
+        "freshness": 20,
+        "metadata": 5,
         "documentation": 15,
         "ecosystem_relevance": 14
       },
       "secret_findings": []
     },
     {
-      "full_name": "invivo-digital-factory/scarif-database-mcp",
-      "name": "scarif-database-mcp",
-      "description": "Local MCP server giving AI agents read-only, pseudonymized access to PostgreSQL through DBeaver connections",
+      "full_name": "FARRAG2004/tia-portal-mcp",
+      "name": "tia-portal-mcp",
+      "description": "MCP server that lets an AI drive Siemens TIA Portal V21 (Openness) and PLCSIM Advanced: hardware, SCL/LAD, WinCC Unified/Comfort screens, simulation",
       "stars": 0,
       "forks": 0,
-      "language": "Rust",
-      "license": "Apache-2.0",
+      "language": "C#",
+      "license": "MIT",
       "topics": [],
-      "updated_at": "2026-11-24T08:45:14Z",
-      "html_url": "https://github.com/invivo-digital-factory/scarif-database-mcp",
+      "updated_at": "2026-11-27T09:18:57Z",
+      "html_url": "https://github.com/FARRAG2004/tia-portal-mcp",
       "categories": [
         "mcp"
       ],
@@ -947,19 +809,44 @@
       "secret_findings": []
     },
     {
-      "full_name": "wooyeolj/LLM-AI-Agent-Recommender",
-      "name": "LLM-AI-Agent-Recommender",
-      "description": "RAG-based recommender for LLMs and AI agent frameworks with real-time crawling",
+      "full_name": "Ponyix/xiaomiev-mate-skill",
+      "name": "xiaomiev-mate-skill",
+      "description": "面向 AI Agent 的 XiaomiEV Mate Skill，通过自然语言查询自部署服务中的车辆状态、行程、充电记录和用车统计。",
+      "stars": 0,
+      "forks": 0,
+      "language": "JavaScript",
+      "license": "MIT",
+      "topics": [],
+      "updated_at": "2026-11-27T08:05:23Z",
+      "html_url": "https://github.com/Ponyix/xiaomiev-mate-skill",
+      "categories": [
+        "skills"
+      ],
+      "score": 52,
+      "score_breakdown": {
+        "popularity": 0,
+        "community": 0,
+        "freshness": 20,
+        "metadata": 10,
+        "documentation": 15,
+        "ecosystem_relevance": 7
+      },
+      "secret_findings": []
+    },
+    {
+      "full_name": "GU143312/deep-research-via-tools",
+      "name": "deep-research-via-tools",
+      "description": "Deep Research assignment: OpenAI Agents SDK orchestration via agent tools, with DeepSeek and SMTP support.",
       "stars": 0,
       "forks": 0,
       "language": "Python",
       "license": null,
       "topics": [],
-      "updated_at": "2026-10-26T09:03:57Z",
-      "html_url": "https://github.com/wooyeolj/LLM-AI-Agent-Recommender",
+      "updated_at": "2026-10-25T09:34:16Z",
+      "html_url": "https://github.com/GU143312/deep-research-via-tools",
       "categories": [
-        "frameworks",
-        "memory-rag"
+        "tools",
+        "workflows"
       ],
       "score": 50,
       "score_breakdown": {
@@ -973,77 +860,137 @@
       "secret_findings": []
     },
     {
-      "full_name": "mvaibhav131/devguard-mcp",
-      "name": "devguard-mcp",
-      "description": "An extensible MCP server for AI-powered code review, change impact analysis and engineering risk assessment.   Copy repository name",
+      "full_name": "kiselkakakaka/java-agent-framework",
+      "name": "java-agent-framework",
+      "description": "Каркас AI-агента на Spring Boot: LLM-роутинг навыков, дозапросы, PostgreSQL + Liquibase XML-миграции, трейс роутинга, веб-чат",
+      "stars": 0,
+      "forks": 0,
+      "language": "Java",
+      "license": null,
+      "topics": [
+        "ai-agents",
+        "chatbot",
+        "java",
+        "liquibase",
+        "llm",
+        "maven",
+        "postgresql",
+        "rest-api",
+        "spring-boot"
+      ],
+      "updated_at": "2026-11-26T10:07:56Z",
+      "html_url": "https://github.com/kiselkakakaka/java-agent-framework",
+      "categories": [
+        "other"
+      ],
+      "score": 45,
+      "score_breakdown": {
+        "popularity": 0,
+        "community": 0,
+        "freshness": 20,
+        "metadata": 10,
+        "documentation": 15,
+        "ecosystem_relevance": 0
+      },
+      "secret_findings": []
+    },
+    {
+      "full_name": "DrizzDev/claude-plugins",
+      "name": "claude-plugins",
+      "description": "Drizz plugins for Claude Code: test AI agents on Drizz twins (/twin:setup, /twin:test, /twin:run)",
       "stars": 0,
       "forks": 0,
       "language": null,
       "license": null,
       "topics": [],
-      "updated_at": "2026-11-26T11:00:31Z",
-      "html_url": "https://github.com/mvaibhav131/devguard-mcp",
+      "updated_at": "2026-11-27T08:57:31Z",
+      "html_url": "https://github.com/DrizzDev/claude-plugins",
       "categories": [
-        "mcp"
+        "plugins"
       ],
-      "score": 37,
+      "score": 42,
       "score_breakdown": {
         "popularity": 0,
         "community": 0,
         "freshness": 20,
         "metadata": 5,
-        "documentation": 5,
+        "documentation": 10,
         "ecosystem_relevance": 7
       },
       "secret_findings": []
     },
     {
-      "full_name": "Manish-D-Rao/RAG--Techniques-Implementation",
-      "name": "RAG--Techniques-Implementation",
-      "description": "",
+      "full_name": "Mlksheri/RAG_model",
+      "name": "RAG_model",
+      "description": "TWO distinct RAG models",
       "stars": 0,
       "forks": 0,
       "language": "Python",
       "license": null,
       "topics": [],
-      "updated_at": "2026-11-26T11:01:19Z",
-      "html_url": "https://github.com/Manish-D-Rao/RAG--Techniques-Implementation",
+      "updated_at": "2026-11-27T10:57:36Z",
+      "html_url": "https://github.com/Mlksheri/RAG_model",
       "categories": [
         "memory-rag"
       ],
-      "score": 27,
+      "score": 42,
       "score_breakdown": {
         "popularity": 0,
         "community": 0,
         "freshness": 20,
-        "metadata": 0,
+        "metadata": 5,
+        "documentation": 10,
+        "ecosystem_relevance": 7
+      },
+      "secret_findings": []
+    },
+    {
+      "full_name": "Violiate/Omnipush",
+      "name": "Omnipush",
+      "description": "Self-hosted universal push gateway (22 channels: WeChat/DingTalk/Feishu/Bark/Telegram/Voice), zero-code active watchers (AI web/GPU/logs), NAT-free ChatOps & Human-in-the-Loop MCP Server / Security Guard Proxy for Claude Code & Cursor.",
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "license": null,
+      "topics": [],
+      "updated_at": "2026-11-27T10:57:30Z",
+      "html_url": "https://github.com/Violiate/Omnipush",
+      "categories": [
+        "mcp"
+      ],
+      "score": 32,
+      "score_breakdown": {
+        "popularity": 0,
+        "community": 0,
+        "freshness": 20,
+        "metadata": 5,
         "documentation": 0,
         "ecosystem_relevance": 7
       },
       "secret_findings": []
     },
     {
-      "full_name": "Karhub123/DSA-RAG",
-      "name": "DSA-RAG",
+      "full_name": "littlebrian123/RAGDemo",
+      "name": "RAGDemo",
       "description": "",
       "stars": 0,
       "forks": 0,
       "language": null,
       "license": null,
       "topics": [],
-      "updated_at": "2026-11-26T11:01:11Z",
-      "html_url": "https://github.com/Karhub123/DSA-RAG",
+      "updated_at": "2026-11-12T10:57:37Z",
+      "html_url": "https://github.com/littlebrian123/RAGDemo",
       "categories": [
-        "memory-rag"
+        "other"
       ],
-      "score": 27,
+      "score": 20,
       "score_breakdown": {
         "popularity": 0,
         "community": 0,
         "freshness": 20,
         "metadata": 0,
         "documentation": 0,
-        "ecosystem_relevance": 7
+        "ecosystem_relevance": 0
       },
       "secret_findings": []
     }
